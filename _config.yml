@@ -1,44 +1,45 @@
 # Site settings 配置站点
 title: 'FAN Bot'
 description: 'your web description'
-keywords: 'your web keywords, another keywords'
-url: 'https://abc.github.io' # your host
+keywords: 'Robot, Machine Learning, Wood Skill, Worldwide Journey'
+url: 'https://Xiaofan-Shen.github.io' # your host
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
-  Homepage: '/'
-  Tags: '/tags.html'
+  Homepage: '/about.html'
+  My Projects: '/'
   Timeline: '/timeline.html'
-  About Me: '/about.html'
-  Link: '/friendLink.html'
+  Tags: '/tags.html'
+  # Link: '/friendLink.html'
 
 # 博主
 author: true
 name: 'Fan'
-NickName: 'your awesome nickname'
+NickName: 'Fan'
 webtitle: "Fan's Robot Lab"
-bio: 'your awesome bio'
+bio: "Hey there, I'm Xiaofan Shen."
 about: true
-aboutyou: 'your introduction'
+aboutyou: "I graduated with a bachelor's degree in Electrical Engineering from the University of Liverpool, and later switched gears to pursue a master's at UCL in Robotics and Computation. I have a deep passion for technology, and I particularly enjoy tinkering with Raspberry Pi to create fun and interesting projects."
 portraits: '/assets/Fanpic.png' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
+  # mail: 'mailto:abc@gmail.com'
+  # weixin: '' # 你的微信二维码存放的地址
+  #qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  linkedin: 'https://www.linkedin.com/in/xiaofan-shen/'
+  github: 'https://github.com/Xiaofan-Shen'
+  #Codepen: ''
+  #weibo: ''
+  instagram: 'https://www.instagram.com/shenxiaofan0303/'
+ # Twitter: ''
+ # Dribbble: ''
+ # Facebook: ''
+ # Google: ''
+ # zhihu: ''
+ # juejin: ''
+ # twitch: ''
 
 # 分页
 paginate: 2
@@ -46,7 +47,7 @@ paginatepath: ['page:num']
 
 # since
 footer:
-  since: 2018
+  since: 2023
 
 # Markdown
 markdown: kramdown
