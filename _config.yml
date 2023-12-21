@@ -10,6 +10,7 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   My Projects: '/'
   Timeline: '/timeline.html'
   Tags: '/tags.html'
+  My Fancy Trip: '/mytrip.html'
   # Link: '/friendLink.html'
 
 # 博主
@@ -26,14 +27,14 @@ portraits: '/assets/Fanpic.png' # your portraits image file path
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   # mail: 'mailto:abc@gmail.com'
-  # weixin: '' # 你的微信二维码存放的地址
+  weixin: '' # 你的微信二维码存放的地址
   #qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   linkedin: 'https://www.linkedin.com/in/xiaofan-shen/'
   github: 'https://github.com/Xiaofan-Shen'
   #Codepen: ''
   #weibo: ''
   instagram: 'https://www.instagram.com/shenxiaofan0303/'
- # Twitter: ''
+  Twitter: 'https://twitter.com/XiaofanSHEN0303'
  # Dribbble: ''
  # Facebook: ''
  # Google: ''

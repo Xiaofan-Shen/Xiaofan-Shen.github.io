@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; display: block; shape-rendering: auto; background: none;" width="280" height="250" preserveAspectRatio="xMidYMid">
+<style type="text/css">
+  text {
+    text-anchor: middle; font-size: 41px; opacity: 0;
+  }
+</style>
+<g style="transform-origin: 140px 125px; transform: scale(0.854167);">
+<style type="text/css">
+
+  @keyframes ld-explode {
+    0% { transform: scale(0) }
+    100% { transform: scale(1) }
+  }
+
+  .ld-explode {
+    animation: ld-explode 1s ease-out infinite;
+    transform-origin: 0px 0px;
+  }
+
+  @keyframes ld-pop {
+    0% { transform: scale(0) }
+    50% { transform: scale(1) }
+    100% { transform: scale(0) }
+  }
+
+  .ld-pop {
+    transform: scale(0);
+    transform-origin: 40px 0px;
+    animation: ld-pop 1s ease-out infinite;
+  }
+
+</style>
+<defs>
+<filter id="blur1">
+  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+</filter>
+<filter id="firework">
+  <feGaussianBlur stdDeviation="2" result="blur"></feGaussianBlur>
+  <feMerge>
+    <feMergeNode in="blur"></feMergeNode>
+    <feMergeNode in="SourceGraphic"></feMergeNode>
+  </feMerge>
+</filter>
+</defs>
+<g transform="translate(140,125)">
+  <g filter="url(#firework)">
+  <g transform="translate(-11.517124395400058,10.448601307628087) scale(0.9247274485385828)"><g class="ld-explode" style="animation-delay:0s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:0s"></path>
+</g></g></g><g transform="translate(-19.299372374322346,-44.579749553804454) scale(0.9628019088819557)"><g class="ld-explode" style="animation-delay:-0.1s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.1s"></path>
+</g></g></g><g transform="translate(45.96598836132028,44.22091334224662) scale(0.7423205862223344)"><g class="ld-explode" style="animation-delay:-0.2s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.2s"></path>
+</g></g></g><g transform="translate(-17.63450862749191,-57.57872838596558) scale(0.7694715752106932)"><g class="ld-explode" style="animation-delay:-0.3s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.3s"></path>
+</g></g></g><g transform="translate(45.909179318336214,-11.92814513875357) scale(0.6361459466380942)"><g class="ld-explode" style="animation-delay:-0.4s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.4s"></path>
+</g></g></g><g transform="translate(42.935091349155876,45.39075072757064) scale(0.8552041959045293)"><g class="ld-explode" style="animation-delay:-0.5s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.5s"></path>
+</g></g></g><g transform="translate(47.74536881289681,30.013714088326747) scale(0.6528422433690779)"><g class="ld-explode" style="animation-delay:-0.6s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.6s"></path>
+</g></g></g>
+  </g>
+  <g>
+  <g><g class="path" style="transform: scale(0.91); transform-origin: -133.285px -3.83674px; animation: 1s linear -0.304615s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M27.70-19.36L27.70-19.36L27.70-19.36Q27.42-18.68 27.16-18.28L27.16-18.28L27.16-18.28Q26.91-17.88 26.60-17.66L26.60-17.66L26.60-17.66Q26.30-17.44 25.91-17.37L25.91-17.37L25.91-17.37Q25.52-17.30 25.01-17.30L25.01-17.30L25.01-17.30Q22.80-17.48 21.22-17.58L21.22-17.58L21.22-17.58Q19.64-17.67 18.42-17.67L18.42-17.67L18.42-17.67Q17.23-17.67 16.32-17.58L16.32-17.58L16.32-17.58Q15.42-17.48 14.55-17.25L14.55-17.25L14.55-17.25Q14.20-16.69 13.50-15.47L13.50-15.47L13.50-15.47Q12.80-14.25 11.94-12.69L11.94-12.69L11.94-12.69Q11.09-11.13 10.20-9.38L10.20-9.38L10.20-9.38Q9.30-7.62 8.55-6L8.55-6L8.55-6Q6.94-2.48 5.66-0.75L5.66-0.75L5.66-0.75Q4.38 0.98 3.49 0.98L3.49 0.98L3.49 0.98Q2.41 0.98 1.93 0.60L1.93 0.60L1.93 0.60Q1.45 0.21 1.45-0.54L1.45-0.54L1.45-0.54Q1.45-1.43 2.10-3.04L2.10-3.04L2.10-3.04Q2.74-4.64 3.89-6.94L3.89-6.94L3.89-6.94Q4.31-7.78 4.82-8.74L4.82-8.74L4.82-8.74Q5.32-9.70 5.84-10.66L5.84-10.66L5.84-10.66Q6.35-11.63 6.84-12.54L6.84-12.54L6.84-12.54Q7.34-13.45 7.73-14.19L7.73-14.19L7.73-14.19Q8.13-14.93 8.40-15.45L8.40-15.45L8.40-15.45Q8.67-15.96 8.74-16.13L8.74-16.13L8.74-16.13Q8.81-16.31 8.85-16.38L8.85-16.38L8.85-16.38Q8.88-16.45 8.89-16.49L8.89-16.49L8.89-16.49Q8.91-16.52 8.91-16.54L8.91-16.54L8.91-16.54Q8.91-16.55 8.93-16.64L8.93-16.64L8.51-16.64L8.51-16.64Q7.62-16.64 7.08-16.78L7.08-16.78L7.08-16.78Q6.54-16.92 6.54-17.39L6.54-17.39L6.54-17.39Q6.54-17.65 6.75-18.05L6.75-18.05L6.75-18.05Q7.24-18.96 7.85-19.44L7.85-19.44L7.85-19.44Q8.46-19.92 9.04-20.13L9.04-20.13L9.04-20.13Q9.61-20.34 10.09-20.36L10.09-20.36L10.09-20.36Q10.57-20.37 10.83-20.37L10.83-20.37L10.83-20.37Q11.46-21.66 12.09-22.95L12.09-22.95L12.09-22.95Q12.73-24.23 13.36-25.52L13.36-25.52L13.36-25.52Q14.55-27.89 15.79-29.48L15.79-29.48L15.79-29.48Q17.02-31.08 18.47-32.04L18.47-32.04L18.47-32.04Q19.92-33 21.68-33.41L21.68-33.41L21.68-33.41Q23.44-33.82 25.69-33.82L25.69-33.82L25.69-33.82Q27.75-33.82 28.98-33.70L28.98-33.70L28.98-33.70Q30.21-33.59 30.70-33.47L30.70-33.47L30.70-33.47Q31.64-33.21 32.03-32.59L32.03-32.59L32.03-32.59Q32.41-31.97 32.41-31.22L32.41-31.22L32.41-31.22Q32.41-30.63 32.21-30.05L32.21-30.05L32.21-30.05Q32.02-29.46 31.68-28.98L31.68-28.98L31.68-28.98Q31.34-28.50 30.90-28.20L30.90-28.20L30.90-28.20Q30.47-27.89 30.02-27.89L30.02-27.89L30.02-27.89Q29.77-27.89 29.58-27.98L29.58-27.98L29.58-27.98Q29.06-28.22 28.65-28.39L28.65-28.39L28.65-28.39Q28.24-28.57 27.82-28.68L27.82-28.68L27.82-28.68Q27.40-28.78 26.87-28.83L26.87-28.83L26.87-28.83Q26.34-28.88 25.57-28.88L25.57-28.88L25.57-28.88Q24.77-28.88 23.68-28.84L23.68-28.84L23.68-28.84Q22.59-28.80 21.02-28.73L21.02-28.73L21.02-28.73Q20.39-27.63 19.84-26.68L19.84-26.68L19.84-26.68Q19.29-25.73 18.76-24.81L18.76-24.81L18.76-24.81Q18.23-23.88 17.68-22.93L17.68-22.93L17.68-22.93Q17.13-21.98 16.48-20.86L16.48-20.86L16.48-20.86Q17.34-21.16 18.36-21.41L18.36-21.41L18.36-21.41Q19.38-21.66 20.45-21.82L20.45-21.82L20.45-21.82Q21.52-21.98 22.59-22.08L22.59-22.08L22.59-22.08Q23.67-22.17 24.66-22.17L24.66-22.17L24.66-22.17Q26.44-22.17 27.22-21.89L27.22-21.89L27.22-21.89Q28.01-21.61 28.01-20.74L28.01-20.74L28.01-20.74Q28.01-20.55 27.98-20.19L27.98-20.19L27.98-20.19Q27.96-19.83 27.70-19.36" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 51, 0);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: -115.245px 4.35826px; animation: 1s linear -0.279231s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M31.76-12.80L31.76-12.80L31.76-12.80Q30.66-12.80 29.63-12.23L29.63-12.23L29.63-12.23Q28.59-11.67 27.80-10.76L27.80-10.76L27.80-10.76Q27-9.84 26.53-8.71L26.53-8.71L26.53-8.71Q26.06-7.57 26.06-6.42L26.06-6.42L26.06-6.42Q26.06-5.95 26.12-5.45L26.12-5.45L26.12-5.45Q26.18-4.95 26.39-4.52L26.39-4.52L26.39-4.52Q26.60-4.10 26.99-3.82L26.99-3.82L26.99-3.82Q27.38-3.54 28.03-3.54L28.03-3.54L28.03-3.54Q28.55-3.54 29.24-4.00L29.24-4.00L29.24-4.00Q29.93-4.45 30.67-5.17L30.67-5.17L30.67-5.17Q31.41-5.88 32.11-6.74L32.11-6.74L32.11-6.74Q32.81-7.59 33.38-8.41L33.38-8.41L33.38-8.41Q33.94-9.23 34.29-9.89L34.29-9.89L34.29-9.89Q34.64-10.55 34.64-10.85L34.64-10.85L34.64-10.85Q34.64-11.30 34.34-11.66L34.34-11.66L34.34-11.66Q34.03-12.02 33.59-12.28L33.59-12.28L33.59-12.28Q33.14-12.54 32.64-12.67L32.64-12.67L32.64-12.67Q32.13-12.80 31.76-12.80zM48-6.75L48-6.75L48-6.75Q47.58-6.35 46.88-5.65L46.88-5.65L46.88-5.65Q46.17-4.95 45.27-4.13L45.27-4.13L45.27-4.13Q44.37-3.30 43.35-2.47L43.35-2.47L43.35-2.47Q42.33-1.64 41.26-0.96L41.26-0.96L41.26-0.96Q40.20-0.28 39.16 0.15L39.16 0.15L39.16 0.15Q38.13 0.59 37.22 0.59L37.22 0.59L37.22 0.59Q36.40 0.59 35.81 0.23L35.81 0.23L35.81 0.23Q35.23-0.12 34.84-0.68L34.84-0.68L34.84-0.68Q34.45-1.24 34.27-1.96L34.27-1.96L34.27-1.96Q34.08-2.67 34.08-3.42L34.08-3.42L34.08-3.42Q34.08-3.91 34.15-4.39L34.15-4.39L34.15-4.39Q34.22-4.88 34.38-5.30L34.38-5.30L34.38-5.30Q33.66-4.31 32.73-3.27L32.73-3.27L32.73-3.27Q31.80-2.23 30.74-1.37L30.74-1.37L30.74-1.37Q29.67-0.52 28.51 0.04L28.51 0.04L28.51 0.04Q27.35 0.59 26.16 0.59L26.16 0.59L26.16 0.59Q25.55 0.59 24.74 0.34L24.74 0.34L24.74 0.34Q23.93 0.09 23.20-0.47L23.20-0.47L23.20-0.47Q22.48-1.03 21.98-1.92L21.98-1.92L21.98-1.92Q21.49-2.81 21.49-4.10L21.49-4.10L21.49-4.10Q21.49-5.06 21.79-6.40L21.79-6.40L21.79-6.40Q22.08-7.73 22.68-9.18L22.68-9.18L22.68-9.18Q23.27-10.62 24.20-12.02L24.20-12.02L24.20-12.02Q25.13-13.43 26.39-14.54L26.39-14.54L26.39-14.54Q27.66-15.66 29.27-16.35L29.27-16.35L29.27-16.35Q30.89-17.04 32.88-17.04L32.88-17.04L32.88-17.04Q33.91-17.04 34.69-16.78L34.69-16.78L34.69-16.78Q35.46-16.52 36-16.22L36-16.22L36-16.22Q36.61-15.84 37.08-15.40L37.08-15.40L37.08-15.40Q37.48-15.61 37.90-15.80L37.90-15.80L37.90-15.80Q38.25-15.96 38.64-16.09L38.64-16.09L38.64-16.09Q39.02-16.22 39.30-16.22L39.30-16.22L39.30-16.22Q40.20-16.22 40.76-15.73L40.76-15.73L40.76-15.73Q41.32-15.23 41.32-14.65L41.32-14.65L41.32-14.65Q41.32-14.48 41.30-14.39L41.30-14.39L41.30-14.39Q41.18-13.95 40.93-13.27L40.93-13.27L40.93-13.27Q40.69-12.59 40.38-11.75L40.38-11.75L40.38-11.75Q40.08-10.92 39.76-10.02L39.76-10.02L39.76-10.02Q39.45-9.12 39.19-8.25L39.19-8.25L39.19-8.25Q38.93-7.38 38.77-6.62L38.77-6.62L38.77-6.62Q38.60-5.86 38.60-5.32L38.60-5.32L38.60-5.32Q38.60-4.62 38.84-4.16L38.84-4.16L38.84-4.16Q39.07-3.70 39.63-3.70L39.63-3.70L39.63-3.70Q39.98-3.70 40.46-3.93L40.46-3.93L40.46-3.93Q40.95-4.15 41.51-4.52L41.51-4.52L41.51-4.52Q42.07-4.90 42.67-5.38L42.67-5.38L42.67-5.38Q43.27-5.86 43.83-6.35L43.83-6.35L43.83-6.35Q45.14-7.52 46.62-9.02L46.62-9.02L46.62-9.02Q46.99-9.33 47.34-9.33L47.34-9.33L47.34-9.33Q47.81-9.33 48.13-8.87L48.13-8.87L48.13-8.87Q48.45-8.41 48.45-7.85L48.45-7.85L48.45-7.85Q48.45-7.20 48-6.75" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(0, 221, 255);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: -92.69px 4.35826px; animation: 1s linear -0.253846s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M49.31-14.23L49.31-14.23L49.31-14.23Q49.78-15.23 50.48-15.73L50.48-15.73L50.48-15.73Q51.19-16.22 51.87-16.22L51.87-16.22L51.87-16.22Q52.43-16.22 52.88-15.81L52.88-15.81L52.88-15.81Q53.32-15.40 53.32-14.60L53.32-14.60L53.32-14.60Q53.32-14.30 53.25-13.95L53.25-13.95L53.25-13.95Q53.18-13.59 52.99-13.20L52.99-13.20L52.99-13.20Q53.51-13.85 54.47-14.54L54.47-14.54L54.47-14.54Q55.43-15.23 56.59-15.79L56.59-15.79L56.59-15.79Q57.75-16.34 58.98-16.69L58.98-16.69L58.98-16.69Q60.21-17.04 61.31-17.04L61.31-17.04L61.31-17.04Q62.55-17.04 63.39-16.44L63.39-16.44L63.39-16.44Q64.22-15.84 64.22-14.41L64.22-14.41L64.22-14.41Q64.22-13.57 63.96-12.66L63.96-12.66L63.96-12.66Q63.70-11.74 63.29-10.83L63.29-10.83L63.29-10.83Q62.88-9.91 62.38-9.04L62.38-9.04L62.38-9.04Q61.88-8.16 61.38-7.38L61.38-7.38L61.38-7.38Q60.89-6.61 60.48-5.96L60.48-5.96L60.48-5.96Q60.07-5.32 59.84-4.90L59.84-4.90L59.84-4.90Q59.53-4.52 59.53-4.03L59.53-4.03L59.53-4.03Q59.53-3.84 59.65-3.70L59.65-3.70L59.65-3.70Q59.77-3.56 60.02-3.56L60.02-3.56L60.02-3.56Q60.19-3.56 60.40-3.60L60.40-3.60L60.40-3.60Q60.61-3.63 60.91-3.84L60.91-3.84L60.91-3.84Q62.18-4.31 63.50-5.02L63.50-5.02L63.50-5.02Q64.83-5.72 66.05-6.50L66.05-6.50L66.05-6.50Q67.27-7.29 68.29-8.07L68.29-8.07L68.29-8.07Q69.30-8.86 69.98-9.49L69.98-9.49L69.98-9.49Q70.17-9.66 70.36-9.73L70.36-9.73L70.36-9.73Q70.55-9.80 70.71-9.80L70.71-9.80L70.71-9.80Q71.11-9.80 71.33-9.49L71.33-9.49L71.33-9.49Q71.55-9.19 71.55-8.72L71.55-8.72L71.55-8.72Q71.55-7.99 71.10-7.10L71.10-7.10L71.10-7.10Q70.64-6.21 69.66-5.44L69.66-5.44L69.66-5.44Q68.32-4.48 67.21-3.68L67.21-3.68L67.21-3.68Q66.09-2.88 64.93-2.19L64.93-2.19L64.93-2.19Q63.77-1.50 62.45-0.90L62.45-0.90L62.45-0.90Q61.13-0.30 59.34 0.21L59.34 0.21L59.34 0.21Q58.73 0.40 58.23 0.49L58.23 0.49L58.23 0.49Q57.73 0.59 57.30 0.59L57.30 0.59L57.30 0.59Q56.06 0.59 55.49-0.11L55.49-0.11L55.49-0.11Q54.91-0.80 54.91-2.04L54.91-2.04L54.91-2.04Q54.91-2.20 54.93-2.36L54.93-2.36L54.93-2.36Q54.94-2.51 54.96-2.70L54.96-2.70L54.96-2.70Q55.01-3.42 55.35-4.29L55.35-4.29L55.35-4.29Q55.69-5.16 56.17-6.07L56.17-6.07L56.17-6.07Q56.65-6.98 57.19-7.89L57.19-7.89L57.19-7.89Q57.73-8.79 58.18-9.60L58.18-9.60L58.18-9.60Q58.64-10.41 58.95-11.04L58.95-11.04L58.95-11.04Q59.25-11.67 59.25-12.07L59.25-12.07L59.25-12.07Q59.25-12.42 59.05-12.67L59.05-12.67L59.05-12.67Q58.85-12.91 58.45-12.91L58.45-12.91L58.45-12.91Q56.95-12.91 55.61-12.02L55.61-12.02L55.61-12.02Q54.26-11.13 53.09-9.83L53.09-9.83L53.09-9.83Q51.91-8.53 50.93-7.08L50.93-7.08L50.93-7.08Q49.95-5.63 49.20-4.48L49.20-4.48L49.20-4.48Q48.73-3.70 48.34-2.82L48.34-2.82L48.34-2.82Q47.95-1.95 47.53-1.18L47.53-1.18L47.53-1.18Q47.11-0.42 46.58 0.08L46.58 0.08L46.58 0.08Q46.05 0.59 45.26 0.59L45.26 0.59L45.26 0.59Q44.44 0.59 43.97 0.07L43.97 0.07L43.97 0.07Q43.50-0.45 43.50-1.20L43.50-1.20L43.50-1.20Q43.50-1.59 43.83-2.48L43.83-2.48L43.83-2.48Q44.16-3.38 44.67-4.55L44.67-4.55L44.67-4.55Q45.19-5.72 45.83-7.07L45.83-7.07L45.83-7.07Q46.48-8.41 47.12-9.74L47.12-9.74L47.12-9.74Q47.77-11.06 48.35-12.23L48.35-12.23L48.35-12.23Q48.94-13.41 49.31-14.23" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(93, 255, 74);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: -69.905px -13.0367px; animation: 1s linear -0.228462s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M85.50-32.06L85.50-32.06L85.50-32.06Q84.63-30.42 83.68-28.75L83.68-28.75L83.68-28.75Q82.73-27.07 81.75-25.41L81.75-25.41L81.75-25.41Q80.77-23.74 79.82-22.11L79.82-22.11L79.82-22.11Q78.87-20.48 78-18.96L78-18.96L78-18.96Q77.65-18.35 77.07-18.02L77.07-18.02L77.07-18.02Q76.50-17.70 75.96-17.70L75.96-17.70L75.96-17.70Q75.54-17.70 75.27-17.89L75.27-17.89L75.27-17.89Q75-18.09 75-18.49L75-18.49L75-18.49Q75-18.61 75.02-18.73L75.02-18.73L75.02-18.73Q75.05-18.84 75.12-18.96L75.12-18.96L75.12-18.96Q75.87-20.72 76.62-22.49L76.62-22.49L76.62-22.49Q77.37-24.26 78.07-25.93L78.07-25.93L78.07-25.93Q78.77-27.61 79.43-29.17L79.43-29.17L79.43-29.17Q80.09-30.73 80.63-32.06L80.63-32.06L80.63-32.06Q80.79-32.44 81.08-32.72L81.08-32.72L81.08-32.72Q81.38-33 81.76-33.19L81.76-33.19L81.76-33.19Q82.15-33.38 82.59-33.46L82.59-33.46L82.59-33.46Q83.04-33.54 83.48-33.54L83.48-33.54L83.48-33.54Q84.33-33.54 84.97-33.26L84.97-33.26L84.97-33.26Q85.62-32.98 85.62-32.46L85.62-32.46L85.62-32.46Q85.62-32.37 85.59-32.25L85.59-32.25L85.59-32.25Q85.57-32.13 85.50-32.06" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 190, 74);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: -61.77px 4.36826px; animation: 1s linear -0.203077s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M90.30-13.20L90.30-13.20L90.30-13.20Q91.73-12.45 92.86-11.48L92.86-11.48L92.86-11.48Q93.98-10.52 94.77-9.46L94.77-9.46L94.77-9.46Q95.55-8.39 95.96-7.29L95.96-7.29L95.96-7.29Q96.38-6.19 96.38-5.13L96.38-5.13L96.38-5.13Q96.38-3.80 95.61-2.73L95.61-2.73L95.61-2.73Q94.85-1.66 93.62-0.93L93.62-0.93L93.62-0.93Q92.39-0.19 90.81 0.20L90.81 0.20L90.81 0.20Q89.23 0.59 87.61 0.59L87.61 0.59L87.61 0.59Q86.39 0.59 85.24 0.32L85.24 0.32L85.24 0.32Q84.09 0.05 83.14-0.52L83.14-0.52L83.14-0.52Q82.20-1.08 81.52-1.96L81.52-1.96L81.52-1.96Q80.84-2.84 80.55-4.05L80.55-4.05L80.55-4.05Q80.51-4.24 80.51-4.36L80.51-4.36L80.51-4.36Q80.51-4.99 80.95-5.45L80.95-5.45L80.95-5.45Q81.40-5.91 81.94-5.91L81.94-5.91L81.94-5.91Q82.20-5.91 82.51-5.81L82.51-5.81L82.51-5.81Q82.83-5.72 82.99-5.39L82.99-5.39L82.99-5.39Q83.30-4.83 83.85-4.38L83.85-4.38L83.85-4.38Q84.40-3.94 85.08-3.62L85.08-3.62L85.08-3.62Q85.76-3.30 86.52-3.13L86.52-3.13L86.52-3.13Q87.28-2.95 88.01-2.95L88.01-2.95L88.01-2.95Q88.76-2.95 89.45-3.09L89.45-3.09L89.45-3.09Q90.14-3.23 90.67-3.54L90.67-3.54L90.67-3.54Q91.20-3.84 91.50-4.31L91.50-4.31L91.50-4.31Q91.80-4.78 91.80-5.46L91.80-5.46L91.80-5.46Q91.80-6.66 91.27-7.66L91.27-7.66L91.27-7.66Q90.73-8.67 89.87-9.53L89.87-9.53L89.87-9.53Q89.02-10.38 87.93-11.12L87.93-11.12L87.93-11.12Q86.84-11.86 85.76-12.54L85.76-12.54L85.76-12.54Q85.64-12.61 85.41-12.95L85.41-12.95L85.41-12.95Q85.17-13.29 85.17-13.64L85.17-13.64L85.17-13.64Q85.17-13.92 85.31-14.09L85.31-14.09L85.31-14.09Q85.69-14.58 86.18-15.09L86.18-15.09L86.18-15.09Q86.67-15.61 87.23-16.04L87.23-16.04L87.23-16.04Q87.80-16.48 88.45-16.75L88.45-16.75L88.45-16.75Q89.11-17.02 89.81-17.02L89.81-17.02L89.81-17.02Q90.33-17.02 90.77-16.88L90.77-16.88L90.77-16.88Q91.22-16.73 91.52-16.51L91.52-16.51L91.52-16.51Q91.83-16.29 92.00-16.02L92.00-16.02L92.00-16.02Q92.18-15.75 92.18-15.52L92.18-15.52L92.18-15.52Q92.18-15.19 92.02-14.88L92.02-14.88L92.02-14.88Q91.85-14.58 91.58-14.30L91.58-14.30L91.58-14.30Q91.31-14.02 90.97-13.73L90.97-13.73L90.97-13.73Q90.63-13.45 90.30-13.20" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 51, 0);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: -24.59px -3.88174px; animation: 1s linear -0.177692s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M123.26-15.26L123.26-15.26L123.26-15.26Q123.40-15.23 123.55-15.23L123.55-15.23L123.55-15.23Q123.70-15.23 123.87-15.23L123.87-15.23L123.87-15.23Q125.91-15.23 127.72-16.11L127.72-16.11L127.72-16.11Q129.54-16.99 130.90-18.35L130.90-18.35L130.90-18.35Q132.26-19.71 133.04-21.38L133.04-21.38L133.04-21.38Q133.83-23.04 133.83-24.61L133.83-24.61L133.83-24.61Q133.83-25.73 133.42-26.74L133.42-26.74L133.42-26.74Q133.01-27.75 132.13-28.50L132.13-28.50L132.13-28.50Q131.25-29.25 129.88-29.70L129.88-29.70L129.88-29.70Q128.51-30.14 126.61-30.14L126.61-30.14L126.61-30.14Q124.48-30.14 122.94-29.74L122.94-29.74L122.94-29.74Q121.41-29.34 120.29-28.71L120.29-28.71L120.29-28.71Q119.18-28.08 118.42-27.26L118.42-27.26L118.42-27.26Q117.66-26.44 117.11-25.57L117.11-25.57L117.11-25.57Q116.55-24.70 116.11-23.88L116.11-23.88L116.11-23.88Q115.66-23.06 115.18-22.43L115.18-22.43L115.18-22.43Q114.70-21.80 114.12-21.40L114.12-21.40L114.12-21.40Q113.53-21 112.66-21L112.66-21L112.66-21Q111.49-21 110.91-21.60L110.91-21.60L110.91-21.60Q110.32-22.20 110.32-23.27L110.32-23.27L110.32-23.27Q110.32-24.28 110.87-25.45L110.87-25.45L110.87-25.45Q111.42-26.63 112.44-27.80L112.44-27.80L112.44-27.80Q113.46-28.97 114.94-30.06L114.94-30.06L114.94-30.06Q116.41-31.15 118.25-31.98L118.25-31.98L118.25-31.98Q120.09-32.81 122.27-33.32L122.27-33.32L122.27-33.32Q124.45-33.82 126.89-33.82L126.89-33.82L126.89-33.82Q129.28-33.82 131.47-33.21L131.47-33.21L131.47-33.21Q133.66-32.60 135.35-31.39L135.35-31.39L135.35-31.39Q137.04-30.19 138.04-28.36L138.04-28.36L138.04-28.36Q139.03-26.53 139.03-24.09L139.03-24.09L139.03-24.09Q139.03-22.45 138.43-20.96L138.43-20.96L138.43-20.96Q137.84-19.48 136.83-18.18L136.83-18.18L136.83-18.18Q135.82-16.88 134.47-15.79L134.47-15.79L134.47-15.79Q133.13-14.70 131.60-13.85L131.60-13.85L131.60-13.85Q130.08-13.01 128.47-12.42L128.47-12.42L128.47-12.42Q126.87-11.84 125.37-11.58L125.37-11.58L125.37-11.58Q125.58-10.48 126.06-9.11L126.06-9.11L126.06-9.11Q126.54-7.73 127.23-6.50L127.23-6.50L127.23-6.50Q127.92-5.27 128.77-4.41L128.77-4.41L128.77-4.41Q129.61-3.54 130.55-3.47L130.55-3.47L130.55-3.47Q130.73-3.45 130.90-3.45L130.90-3.45L130.90-3.45Q131.06-3.45 131.23-3.45L131.23-3.45L131.23-3.45Q132.94-3.45 134.27-4.01L134.27-4.01L134.27-4.01Q135.61-4.57 136.50-5.25L136.50-5.25L136.50-5.25Q137.55-6.02 138.33-7.05L138.33-7.05L138.33-7.05Q139.05-7.88 139.80-7.88L139.80-7.88L139.80-7.88Q140.27-7.88 140.60-7.55L140.60-7.55L140.60-7.55Q140.93-7.22 140.93-6.66L140.93-6.66L140.93-6.66Q140.93-6.12 140.59-5.40L140.59-5.40L140.59-5.40Q140.25-4.69 139.43-3.91L139.43-3.91L139.43-3.91Q137.02-1.64 134.71-0.60L134.71-0.60L134.71-0.60Q132.40 0.45 130.34 0.45L130.34 0.45L130.34 0.45Q128.65 0.45 127.22-0.52L127.22-0.52L127.22-0.52Q125.79-1.48 124.62-3.12L124.62-3.12L124.62-3.12Q123.45-4.76 122.48-6.95L122.48-6.95L122.48-6.95Q121.52-9.14 120.77-11.58L120.77-11.58L120.77-11.58Q120.35-10.62 119.91-9.32L119.91-9.32L119.91-9.32Q119.46-8.02 118.95-6.63L118.95-6.63L118.95-6.63Q118.43-5.25 117.87-3.90L117.87-3.90L117.87-3.90Q117.30-2.55 116.63-1.49L116.63-1.49L116.63-1.49Q115.95-0.42 115.17 0.23L115.17 0.23L115.17 0.23Q114.40 0.89 113.48 0.89L113.48 0.89L113.48 0.89Q112.73 0.89 112.27 0.66L112.27 0.66L112.27 0.66Q111.80 0.42 111.54 0.07L111.54 0.07L111.54 0.07Q111.28-0.28 111.18-0.70L111.18-0.70L111.18-0.70Q111.07-1.13 111.07-1.50L111.07-1.50L111.07-1.50Q111.07-2.04 111.21-2.60L111.21-2.60L111.21-2.60Q111.35-3.16 111.61-3.66L111.61-3.66L118.52-16.31L118.52-16.31Q119.41-17.91 120.32-19.39L120.32-19.39L120.32-19.39Q121.22-20.88 122.07-22.03L122.07-22.03L122.07-22.03Q122.93-23.18 123.69-23.87L123.69-23.87L123.69-23.87Q124.45-24.56 125.06-24.56L125.06-24.56L125.06-24.56Q125.23-24.56 125.46-24.50L125.46-24.50L125.46-24.50Q125.70-24.45 125.88-24.29L125.88-24.29L125.88-24.29Q126.07-24.14 126.21-23.85L126.21-23.85L126.21-23.85Q126.35-23.55 126.35-23.11L126.35-23.11L126.35-23.11Q126.35-22.66 126.09-21.87L126.09-21.87L126.09-21.87Q125.84-21.07 125.41-20.04L125.41-20.04L125.41-20.04Q124.99-19.01 124.43-17.78L124.43-17.78L124.43-17.78Q123.87-16.55 123.26-15.26" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(0, 221, 255);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: -1.17501px 4.35826px; animation: 1s linear -0.152308s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M146.70-12.91L146.70-12.91L146.70-12.91Q145.59-12.91 144.57-12.36L144.57-12.36L144.57-12.36Q143.55-11.81 142.77-10.91L142.77-10.91L142.77-10.91Q141.98-10.01 141.52-8.87L141.52-8.87L141.52-8.87Q141.05-7.73 141.05-6.54L141.05-6.54L141.05-6.54Q141.05-6.09 141.12-5.57L141.12-5.57L141.12-5.57Q141.19-5.04 141.41-4.58L141.41-4.58L141.41-4.58Q141.63-4.13 142.05-3.82L142.05-3.82L142.05-3.82Q142.48-3.52 143.18-3.52L143.18-3.52L143.18-3.52Q144.26-3.52 145.28-4.09L145.28-4.09L145.28-4.09Q146.30-4.66 147.09-5.59L147.09-5.59L147.09-5.59Q147.89-6.52 148.36-7.69L148.36-7.69L148.36-7.69Q148.83-8.86 148.83-10.05L148.83-10.05L148.83-10.05Q148.83-10.52 148.77-11.03L148.77-11.03L148.77-11.03Q148.71-11.53 148.49-11.95L148.49-11.95L148.49-11.95Q148.27-12.38 147.84-12.64L147.84-12.64L147.84-12.64Q147.42-12.91 146.70-12.91zM147.91-17.04L147.91-17.04L147.91-17.04Q148.80-17.04 149.82-16.80L149.82-16.80L149.82-16.80Q150.84-16.57 151.71-16.01L151.71-16.01L151.71-16.01Q152.58-15.45 153.15-14.52L153.15-14.52L153.15-14.52Q153.73-13.59 153.73-12.23L153.73-12.23L153.73-12.23Q153.73-11.53 153.54-10.63L153.54-10.63L153.54-10.63Q153.35-9.73 152.98-8.74L152.98-8.74L152.98-8.74Q153.21-8.46 153.52-8.34L153.52-8.34L153.52-8.34Q153.82-8.23 154.17-8.23L154.17-8.23L154.17-8.23Q154.66-8.23 155.26-8.51L155.26-8.51L155.26-8.51Q155.86-8.79 156.49-9.23L156.49-9.23L156.49-9.23Q157.13-9.68 157.76-10.24L157.76-10.24L157.76-10.24Q158.39-10.80 158.95-11.37L158.95-11.37L158.95-11.37Q159.52-11.93 159.97-12.43L159.97-12.43L159.97-12.43Q160.43-12.94 160.73-13.29L160.73-13.29L160.73-13.29Q160.90-13.45 161.13-13.45L161.13-13.45L161.13-13.45Q161.46-13.45 161.72-13.11L161.72-13.11L161.72-13.11Q161.98-12.77 161.98-12.16L161.98-12.16L161.98-12.16Q161.98-11.55 161.61-10.76L161.61-10.76L161.61-10.76Q161.25-9.96 160.27-9.09L160.27-9.09L160.27-9.09Q159.70-8.48 158.98-7.69L158.98-7.69L158.98-7.69Q158.25-6.89 157.43-6.19L157.43-6.19L157.43-6.19Q156.61-5.48 155.72-4.99L155.72-4.99L155.72-4.99Q154.83-4.50 153.94-4.50L153.94-4.50L153.94-4.50Q153.33-4.50 152.75-4.69L152.75-4.69L152.75-4.69Q152.18-4.88 151.59-5.30L151.59-5.30L151.59-5.30Q150.75-3.98 149.67-2.91L149.67-2.91L149.67-2.91Q148.59-1.83 147.27-1.05L147.27-1.05L147.27-1.05Q145.95-0.28 144.41 0.15L144.41 0.15L144.41 0.15Q142.88 0.59 141.14 0.59L141.14 0.59L141.14 0.59Q140.48 0.59 139.62 0.33L139.62 0.33L139.62 0.33Q138.75 0.07 137.96-0.53L137.96-0.53L137.96-0.53Q137.18-1.13 136.64-2.09L136.64-2.09L136.64-2.09Q136.10-3.05 136.10-4.43L136.10-4.43L136.10-4.43Q136.10-5.37 136.41-6.68L136.41-6.68L136.41-6.68Q136.71-7.99 137.33-9.39L137.33-9.39L137.33-9.39Q137.95-10.78 138.90-12.15L138.90-12.15L138.90-12.15Q139.85-13.52 141.16-14.61L141.16-14.61L141.16-14.61Q142.48-15.70 144.16-16.37L144.16-16.37L144.16-16.37Q145.85-17.04 147.91-17.04" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(93, 255, 74);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: 20.175px -2.46674px; animation: 1s linear -0.126923s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M169.36-13.15L169.36-13.15L169.36-13.15Q168.02-13.15 166.69-12.50L166.69-12.50L166.69-12.50Q165.35-11.86 164.29-10.80L164.29-10.80L164.29-10.80Q163.22-9.75 162.54-8.43L162.54-8.43L162.54-8.43Q161.86-7.10 161.86-5.74L161.86-5.74L161.86-5.74Q161.86-5.37 161.93-4.98L161.93-4.98L161.93-4.98Q162-4.59 162.22-4.27L162.22-4.27L162.22-4.27Q162.45-3.94 162.87-3.73L162.87-3.73L162.87-3.73Q163.29-3.52 163.99-3.52L163.99-3.52L163.99-3.52Q165.35-3.52 166.63-4.16L166.63-4.16L166.63-4.16Q167.91-4.80 168.91-5.86L168.91-5.86L168.91-5.86Q169.92-6.91 170.53-8.24L170.53-8.24L170.53-8.24Q171.14-9.56 171.14-10.90L171.14-10.90L171.14-10.90Q171.14-11.25 171.08-11.65L171.08-11.65L171.08-11.65Q171.02-12.05 170.84-12.38L170.84-12.38L170.84-12.38Q170.65-12.70 170.30-12.93L170.30-12.93L170.30-12.93Q169.95-13.15 169.36-13.15zM171.33-3.70L171.33-3.70L171.33-3.70Q169.34-1.31 167.10-0.20L167.10-0.20L167.10-0.20Q164.86 0.91 162.26 0.91L162.26 0.91L162.26 0.91Q160.83 0.91 159.84 0.50L159.84 0.50L159.84 0.50Q158.86 0.09 158.25-0.61L158.25-0.61L158.25-0.61Q157.64-1.31 157.37-2.25L157.37-2.25L157.37-2.25Q157.10-3.19 157.10-4.24L157.10-4.24L157.10-4.24Q157.10-5.44 157.41-6.71L157.41-6.71L157.41-6.71Q157.71-7.99 158.20-9.19L158.20-9.19L158.20-9.19Q158.53-9.96 158.74-10.48L158.74-10.48L158.74-10.48Q158.95-10.99 159.09-11.36L159.09-11.36L159.09-11.36Q159.23-11.72 159.34-11.99L159.34-11.99L159.34-11.99Q159.45-12.26 159.56-12.55L159.56-12.55L159.56-12.55Q159.68-12.84 159.84-13.23L159.84-13.23L159.84-13.23Q160.01-13.62 160.29-14.23L160.29-14.23L167.13-29.44L167.13-29.44Q167.27-29.74 167.54-30.02L167.54-30.02L167.54-30.02Q167.81-30.30 168.16-30.53L168.16-30.53L168.16-30.53Q168.52-30.75 168.93-30.88L168.93-30.88L168.93-30.88Q169.34-31.01 169.76-31.01L169.76-31.01L169.76-31.01Q170.84-31.01 171.27-30.59L171.27-30.59L171.27-30.59Q171.70-30.16 171.70-29.55L171.70-29.55L171.70-29.55Q171.70-29.09 171.47-28.54L171.47-28.54L171.47-28.54Q171.23-27.98 170.95-27.52L170.95-27.52L170.95-27.52Q169.22-24.19 167.67-20.75L167.67-20.75L167.67-20.75Q166.13-17.32 164.39-13.97L164.39-13.97L164.39-13.97Q165.14-14.55 165.98-15.11L165.98-15.11L165.98-15.11Q166.83-15.66 167.74-16.09L167.74-16.09L167.74-16.09Q168.66-16.52 169.64-16.79L169.64-16.79L169.64-16.79Q170.63-17.06 171.66-17.06L171.66-17.06L171.66-17.06Q172.38-17.06 173.13-16.78L173.13-16.78L173.13-16.78Q173.88-16.50 174.50-15.96L174.50-15.96L174.50-15.96Q175.13-15.42 175.51-14.64L175.51-14.64L175.51-14.64Q175.90-13.85 175.90-12.82L175.90-12.82L175.90-12.82Q175.90-12.59 175.76-11.88L175.76-11.88L175.76-11.88Q175.62-11.18 175.35-10.30L175.35-10.30L175.35-10.30Q175.08-9.42 174.69-8.50L174.69-8.50L174.69-8.50Q174.30-7.57 173.84-6.87L173.84-6.87L173.84-6.87Q174-6.61 174.26-6.55L174.26-6.55L174.26-6.55Q174.52-6.49 174.84-6.49L174.84-6.49L174.84-6.49Q175.92-6.49 176.99-6.77L176.99-6.77L176.99-6.77Q178.05-7.05 179.00-7.46L179.00-7.46L179.00-7.46Q179.95-7.88 180.75-8.32L180.75-8.32L180.75-8.32Q181.55-8.77 182.09-9.09L182.09-9.09L182.09-9.09Q182.37-9.40 182.70-9.40L182.70-9.40L182.70-9.40Q183.09-9.40 183.39-9.05L183.39-9.05L183.39-9.05Q183.68-8.70 183.68-8.13L183.68-8.13L183.68-8.13Q183.68-7.59 183.46-7.07L183.46-7.07L183.46-7.07Q183.23-6.54 182.65-5.91L182.65-5.91L182.65-5.91Q181.59-5.27 180.53-4.71L180.53-4.71L180.53-4.71Q179.46-4.15 178.36-3.74L178.36-3.74L178.36-3.74Q177.26-3.33 176.12-3.08L176.12-3.08L176.12-3.08Q174.98-2.84 173.81-2.84L173.81-2.84L173.81-2.84Q173.06-2.84 172.43-3.05L172.43-3.05L172.43-3.05Q171.80-3.26 171.33-3.70" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 190, 74);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: 39.935px 4.35826px; animation: 1s linear -0.101538s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M187.80-12.91L187.80-12.91L187.80-12.91Q186.70-12.91 185.68-12.36L185.68-12.36L185.68-12.36Q184.66-11.81 183.88-10.91L183.88-10.91L183.88-10.91Q183.09-10.01 182.63-8.87L182.63-8.87L182.63-8.87Q182.16-7.73 182.16-6.54L182.16-6.54L182.16-6.54Q182.16-6.09 182.23-5.57L182.23-5.57L182.23-5.57Q182.30-5.04 182.52-4.58L182.52-4.58L182.52-4.58Q182.74-4.13 183.16-3.82L183.16-3.82L183.16-3.82Q183.59-3.52 184.29-3.52L184.29-3.52L184.29-3.52Q185.37-3.52 186.39-4.09L186.39-4.09L186.39-4.09Q187.41-4.66 188.20-5.59L188.20-5.59L188.20-5.59Q189-6.52 189.47-7.69L189.47-7.69L189.47-7.69Q189.94-8.86 189.94-10.05L189.94-10.05L189.94-10.05Q189.94-10.52 189.88-11.03L189.88-11.03L189.88-11.03Q189.82-11.53 189.60-11.95L189.60-11.95L189.60-11.95Q189.38-12.38 188.95-12.64L188.95-12.64L188.95-12.64Q188.53-12.91 187.80-12.91zM189.02-17.04L189.02-17.04L189.02-17.04Q189.91-17.04 190.93-16.80L190.93-16.80L190.93-16.80Q191.95-16.57 192.82-16.01L192.82-16.01L192.82-16.01Q193.69-15.45 194.26-14.52L194.26-14.52L194.26-14.52Q194.84-13.59 194.84-12.23L194.84-12.23L194.84-12.23Q194.84-11.53 194.65-10.63L194.65-10.63L194.65-10.63Q194.46-9.73 194.09-8.74L194.09-8.74L194.09-8.74Q194.32-8.46 194.63-8.34L194.63-8.34L194.63-8.34Q194.93-8.23 195.28-8.23L195.28-8.23L195.28-8.23Q195.77-8.23 196.37-8.51L196.37-8.51L196.37-8.51Q196.97-8.79 197.60-9.23L197.60-9.23L197.60-9.23Q198.23-9.68 198.87-10.24L198.87-10.24L198.87-10.24Q199.50-10.80 200.06-11.37L200.06-11.37L200.06-11.37Q200.63-11.93 201.08-12.43L201.08-12.43L201.08-12.43Q201.54-12.94 201.84-13.29L201.84-13.29L201.84-13.29Q202.01-13.45 202.24-13.45L202.24-13.45L202.24-13.45Q202.57-13.45 202.83-13.11L202.83-13.11L202.83-13.11Q203.09-12.77 203.09-12.16L203.09-12.16L203.09-12.16Q203.09-11.55 202.72-10.76L202.72-10.76L202.72-10.76Q202.36-9.96 201.38-9.09L201.38-9.09L201.38-9.09Q200.81-8.48 200.09-7.69L200.09-7.69L200.09-7.69Q199.36-6.89 198.54-6.19L198.54-6.19L198.54-6.19Q197.72-5.48 196.83-4.99L196.83-4.99L196.83-4.99Q195.94-4.50 195.05-4.50L195.05-4.50L195.05-4.50Q194.44-4.50 193.86-4.69L193.86-4.69L193.86-4.69Q193.29-4.88 192.70-5.30L192.70-5.30L192.70-5.30Q191.86-3.98 190.78-2.91L190.78-2.91L190.78-2.91Q189.70-1.83 188.38-1.05L188.38-1.05L188.38-1.05Q187.05-0.28 185.52 0.15L185.52 0.15L185.52 0.15Q183.98 0.59 182.25 0.59L182.25 0.59L182.25 0.59Q181.59 0.59 180.73 0.33L180.73 0.33L180.73 0.33Q179.86 0.07 179.07-0.53L179.07-0.53L179.07-0.53Q178.29-1.13 177.75-2.09L177.75-2.09L177.75-2.09Q177.21-3.05 177.21-4.43L177.21-4.43L177.21-4.43Q177.21-5.37 177.52-6.68L177.52-6.68L177.52-6.68Q177.82-7.99 178.44-9.39L178.44-9.39L178.44-9.39Q179.06-10.78 180.01-12.15L180.01-12.15L180.01-12.15Q180.96-13.52 182.27-14.61L182.27-14.61L182.27-14.61Q183.59-15.70 185.27-16.37L185.27-16.37L185.27-16.37Q186.96-17.04 189.02-17.04" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 51, 0);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: 57.135px -0.971742px; animation: 1s linear -0.0761538s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M215.44-13.10L205.69-13.03L205.69-13.03Q204.82-11.34 204.05-9.74L204.05-9.74L204.05-9.74Q203.27-8.13 202.59-6.77L202.59-6.77L202.59-6.77Q202.31-6.21 202.04-5.47L202.04-5.47L202.04-5.47Q201.77-4.73 201.77-4.17L201.77-4.17L201.77-4.17Q201.77-3.84 201.93-3.66L201.93-3.66L201.93-3.66Q202.08-3.47 202.43-3.47L202.43-3.47L202.43-3.47Q202.92-3.47 203.67-3.76L203.67-3.76L203.67-3.76Q204.42-4.05 205.29-4.54L205.29-4.54L205.29-4.54Q206.16-5.02 207.12-5.64L207.12-5.64L207.12-5.64Q208.08-6.26 209.00-6.93L209.00-6.93L209.00-6.93Q209.93-7.59 210.77-8.26L210.77-8.26L210.77-8.26Q211.62-8.93 212.27-9.49L212.27-9.49L212.27-9.49Q212.65-9.75 212.98-9.75L212.98-9.75L212.98-9.75Q213.38-9.75 213.63-9.40L213.63-9.40L213.63-9.40Q213.89-9.05 213.89-8.51L213.89-8.51L213.89-8.51Q213.89-7.97 213.63-7.41L213.63-7.41L213.63-7.41Q213.38-6.84 212.70-6.30L212.70-6.30L212.70-6.30Q211.17-4.92 209.61-3.68L209.61-3.68L209.61-3.68Q208.05-2.44 206.52-1.49L206.52-1.49L206.52-1.49Q204.98-0.54 203.48 0.02L203.48 0.02L203.48 0.02Q201.98 0.59 200.58 0.59L200.58 0.59L200.58 0.59Q199.64 0.59 199.01 0.34L199.01 0.34L199.01 0.34Q198.38 0.09 197.99-0.34L197.99-0.34L197.99-0.34Q197.60-0.77 197.44-1.35L197.44-1.35L197.44-1.35Q197.27-1.92 197.27-2.58L197.27-2.58L197.27-2.58Q197.27-3.75 197.67-5.02L197.67-5.02L197.67-5.02Q198.07-6.28 198.56-7.29L198.56-7.29L198.56-7.29Q199.27-8.74 199.96-10.17L199.96-10.17L199.96-10.17Q200.65-11.60 201.30-12.91L201.30-12.91L200.30-12.91L200.30-12.91Q198.98-12.91 198.49-13.34L198.49-13.34L198.49-13.34Q198-13.76 198-14.30L198-14.30L198-14.30Q198-14.53 198.15-14.87L198.15-14.87L198.15-14.87Q198.30-15.21 198.60-15.50L198.60-15.50L198.60-15.50Q198.89-15.80 199.31-16.01L199.31-16.01L199.31-16.01Q199.73-16.22 200.27-16.22L200.27-16.22L202.80-16.22L207.75-26.04L207.75-26.04Q208.22-26.93 208.91-27.32L208.91-27.32L208.91-27.32Q209.60-27.70 210.35-27.70L210.35-27.70L210.35-27.70Q211.05-27.70 211.64-27.33L211.64-27.33L211.64-27.33Q212.23-26.95 212.23-26.09L212.23-26.09L212.23-26.09Q212.23-25.64 212.03-25.18L212.03-25.18L212.03-25.18Q211.83-24.73 211.50-24.12L211.50-24.12L211.50-24.12Q211.29-23.72 210.98-23.17L210.98-23.17L210.98-23.17Q210.68-22.62 210.34-22.00L210.34-22.00L210.34-22.00Q210-21.38 209.64-20.70L209.64-20.70L209.64-20.70Q209.27-20.02 208.92-19.38L208.92-19.38L208.92-19.38Q208.13-17.88 207.23-16.22L207.23-16.22L214.88-16.22L214.88-16.22Q215.44-16.22 215.91-16.16L215.91-16.16L215.91-16.16Q216.38-16.10 216.71-15.93L216.71-15.93L216.71-15.93Q217.05-15.75 217.24-15.45L217.24-15.45L217.24-15.45Q217.43-15.14 217.43-14.63L217.43-14.63L217.43-14.63Q217.43-14.37 217.35-14.11L217.35-14.11L217.35-14.11Q217.27-13.85 217.04-13.64L217.04-13.64L217.04-13.64Q216.82-13.43 216.43-13.29L216.43-13.29L216.43-13.29Q216.05-13.15 215.44-13.10L215.44-13.10" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(0, 221, 255);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: 88.695px -3.97674px; animation: 1s linear -0.0507692s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M227.51-4.90L227.51-4.90L227.51-4.90Q227.51-4.59 227.84-4.28L227.84-4.28L227.84-4.28Q228.16-3.96 228.86-3.68L228.86-3.68L228.86-3.68Q229.55-3.40 230.64-3.22L230.64-3.22L230.64-3.22Q231.73-3.05 233.25-3.02L233.25-3.02L233.25-3.02Q232.55-3.40 231.83-3.81L231.83-3.81L231.83-3.81Q231.12-4.22 230.46-4.56L230.46-4.56L230.46-4.56Q229.80-4.90 229.27-5.12L229.27-5.12L229.27-5.12Q228.73-5.34 228.35-5.34L228.35-5.34L228.35-5.34Q227.51-5.34 227.51-4.90zM248.34-30.98L248.34-30.98L248.34-30.98Q248.70-31.69 249.19-32.23L249.19-32.23L249.19-32.23Q249.68-32.77 250.24-33.12L250.24-33.12L250.24-33.12Q250.80-33.47 251.39-33.64L251.39-33.64L251.39-33.64Q251.98-33.82 252.49-33.82L252.49-33.82L252.49-33.82Q253.24-33.82 253.76-33.43L253.76-33.43L253.76-33.43Q254.27-33.05 254.27-32.30L254.27-32.30L254.27-32.30Q254.27-31.71 253.97-31.03L253.97-31.03L253.97-31.03Q252.66-28.22 251.30-25.37L251.30-25.37L251.30-25.37Q249.94-22.52 248.57-19.80L248.57-19.80L248.57-19.80Q247.20-17.09 245.88-14.57L245.88-14.57L245.88-14.57Q244.57-12.05 243.35-9.89L243.35-9.89L243.35-9.89Q242.13-7.73 241.07-6.02L241.07-6.02L241.07-6.02Q240-4.31 239.13-3.19L239.13-3.19L239.13-3.19Q241.17-3.33 242.86-3.56L242.86-3.56L242.86-3.56Q244.55-3.80 246.12-4.10L246.12-4.10L246.12-4.10Q247.69-4.41 249.27-4.77L249.27-4.77L249.27-4.77Q250.85-5.13 252.68-5.51L252.68-5.51L252.68-5.51Q252.80-5.55 252.94-5.58L252.94-5.58L252.94-5.58Q253.08-5.60 253.20-5.60L253.20-5.60L253.20-5.60Q253.92-5.60 254.34-5.03L254.34-5.03L254.34-5.03Q254.77-4.45 254.77-3.73L254.77-3.73L254.77-3.73Q254.77-3.28 253.92-2.78L253.92-2.78L253.92-2.78Q253.08-2.27 251.61-1.78L251.61-1.78L251.61-1.78Q250.15-1.29 248.17-0.83L248.17-0.83L248.17-0.83Q246.19-0.38 243.89-0.04L243.89-0.04L243.89-0.04Q241.59 0.30 239.09 0.50L239.09 0.50L239.09 0.50Q236.58 0.70 234.09 0.70L234.09 0.70L234.09 0.70Q231.21 0.70 229.13 0.30L229.13 0.30L229.13 0.30Q227.04-0.09 225.69-0.80L225.69-0.80L225.69-0.80Q224.34-1.50 223.70-2.46L223.70-2.46L223.70-2.46Q223.05-3.42 223.05-4.55L223.05-4.55L223.05-4.55Q223.05-5.65 223.46-6.41L223.46-6.41L223.46-6.41Q223.88-7.17 224.59-7.64L224.59-7.64L224.59-7.64Q225.30-8.11 226.28-8.32L226.28-8.32L226.28-8.32Q227.25-8.53 228.38-8.53L228.38-8.53L228.38-8.53Q229.29-8.53 230.27-8.20L230.27-8.20L230.27-8.20Q231.26-7.88 232.21-7.35L232.21-7.35L232.21-7.35Q233.16-6.82 234.01-6.18L234.01-6.18L234.01-6.18Q234.87-5.53 235.50-4.88L235.50-4.88L235.50-4.88Q236.04-6.28 236.80-8.02L236.80-8.02L236.80-8.02Q237.56-9.75 238.45-11.66L238.45-11.66L238.45-11.66Q239.34-13.57 240.33-15.57L240.33-15.57L240.33-15.57Q241.31-17.58 242.30-19.52L242.30-19.52L242.30-19.52Q243.28-21.47 244.22-23.27L244.22-23.27L244.22-23.27Q245.16-25.08 245.95-26.58L245.95-26.58L245.95-26.58Q246.75-28.08 247.37-29.23L247.37-29.23L247.37-29.23Q247.99-30.38 248.34-30.98" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(93, 255, 74);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: 114.98px 4.35826px; animation: 1s linear -0.0253846s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M261.98-12.80L261.98-12.80L261.98-12.80Q260.88-12.80 259.85-12.23L259.85-12.23L259.85-12.23Q258.82-11.67 258.02-10.76L258.02-10.76L258.02-10.76Q257.23-9.84 256.76-8.71L256.76-8.71L256.76-8.71Q256.29-7.57 256.29-6.42L256.29-6.42L256.29-6.42Q256.29-5.95 256.35-5.45L256.35-5.45L256.35-5.45Q256.41-4.95 256.62-4.52L256.62-4.52L256.62-4.52Q256.83-4.10 257.21-3.82L257.21-3.82L257.21-3.82Q257.60-3.54 258.26-3.54L258.26-3.54L258.26-3.54Q258.77-3.54 259.46-4.00L259.46-4.00L259.46-4.00Q260.16-4.45 260.89-5.17L260.89-5.17L260.89-5.17Q261.63-5.88 262.34-6.74L262.34-6.74L262.34-6.74Q263.04-7.59 263.60-8.41L263.60-8.41L263.60-8.41Q264.16-9.23 264.52-9.89L264.52-9.89L264.52-9.89Q264.87-10.55 264.87-10.85L264.87-10.85L264.87-10.85Q264.87-11.30 264.56-11.66L264.56-11.66L264.56-11.66Q264.26-12.02 263.81-12.28L263.81-12.28L263.81-12.28Q263.37-12.54 262.86-12.67L262.86-12.67L262.86-12.67Q262.36-12.80 261.98-12.80zM278.23-6.75L278.23-6.75L278.23-6.75Q277.80-6.35 277.10-5.65L277.10-5.65L277.10-5.65Q276.40-4.95 275.50-4.13L275.50-4.13L275.50-4.13Q274.59-3.30 273.57-2.47L273.57-2.47L273.57-2.47Q272.55-1.64 271.49-0.96L271.49-0.96L271.49-0.96Q270.42-0.28 269.39 0.15L269.39 0.15L269.39 0.15Q268.36 0.59 267.45 0.59L267.45 0.59L267.45 0.59Q266.63 0.59 266.04 0.23L266.04 0.23L266.04 0.23Q265.45-0.12 265.07-0.68L265.07-0.68L265.07-0.68Q264.68-1.24 264.49-1.96L264.49-1.96L264.49-1.96Q264.30-2.67 264.30-3.42L264.30-3.42L264.30-3.42Q264.30-3.91 264.38-4.39L264.38-4.39L264.38-4.39Q264.45-4.88 264.61-5.30L264.61-5.30L264.61-5.30Q263.88-4.31 262.96-3.27L262.96-3.27L262.96-3.27Q262.03-2.23 260.96-1.37L260.96-1.37L260.96-1.37Q259.90-0.52 258.74 0.04L258.74 0.04L258.74 0.04Q257.58 0.59 256.38 0.59L256.38 0.59L256.38 0.59Q255.77 0.59 254.96 0.34L254.96 0.34L254.96 0.34Q254.16 0.09 253.43-0.47L253.43-0.47L253.43-0.47Q252.70-1.03 252.21-1.92L252.21-1.92L252.21-1.92Q251.72-2.81 251.72-4.10L251.72-4.10L251.72-4.10Q251.72-5.06 252.01-6.40L252.01-6.40L252.01-6.40Q252.30-7.73 252.90-9.18L252.90-9.18L252.90-9.18Q253.50-10.62 254.43-12.02L254.43-12.02L254.43-12.02Q255.35-13.43 256.62-14.54L256.62-14.54L256.62-14.54Q257.88-15.66 259.50-16.35L259.50-16.35L259.50-16.35Q261.12-17.04 263.11-17.04L263.11-17.04L263.11-17.04Q264.14-17.04 264.91-16.78L264.91-16.78L264.91-16.78Q265.69-16.52 266.23-16.22L266.23-16.22L266.23-16.22Q266.84-15.84 267.30-15.40L267.30-15.40L267.30-15.40Q267.70-15.61 268.13-15.80L268.13-15.80L268.13-15.80Q268.48-15.96 268.86-16.09L268.86-16.09L268.86-16.09Q269.25-16.22 269.53-16.22L269.53-16.22L269.53-16.22Q270.42-16.22 270.98-15.73L270.98-15.73L270.98-15.73Q271.55-15.23 271.55-14.65L271.55-14.65L271.55-14.65Q271.55-14.48 271.52-14.39L271.52-14.39L271.52-14.39Q271.41-13.95 271.16-13.27L271.16-13.27L271.16-13.27Q270.91-12.59 270.61-11.75L270.61-11.75L270.61-11.75Q270.30-10.92 269.99-10.02L269.99-10.02L269.99-10.02Q269.67-9.12 269.41-8.25L269.41-8.25L269.41-8.25Q269.16-7.38 268.99-6.62L268.99-6.62L268.99-6.62Q268.83-5.86 268.83-5.32L268.83-5.32L268.83-5.32Q268.83-4.62 269.06-4.16L269.06-4.16L269.06-4.16Q269.30-3.70 269.86-3.70L269.86-3.70L269.86-3.70Q270.21-3.70 270.69-3.93L270.69-3.93L270.69-3.93Q271.17-4.15 271.73-4.52L271.73-4.52L271.73-4.52Q272.30-4.90 272.89-5.38L272.89-5.38L272.89-5.38Q273.49-5.86 274.05-6.35L274.05-6.35L274.05-6.35Q275.37-7.52 276.84-9.02L276.84-9.02L276.84-9.02Q277.22-9.33 277.57-9.33L277.57-9.33L277.57-9.33Q278.04-9.33 278.36-8.87L278.36-8.87L278.36-8.87Q278.67-8.41 278.67-7.85L278.67-7.85L278.67-7.85Q278.67-7.20 278.23-6.75" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 190, 74);"></path></g><g class="path" style="transform: scale(0.91); transform-origin: 138.375px -2.46674px; animation: 1s linear 0s infinite normal forwards running breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652;"><path d="M287.55-13.15L287.55-13.15L287.55-13.15Q286.22-13.15 284.88-12.50L284.88-12.50L284.88-12.50Q283.55-11.86 282.48-10.80L282.48-10.80L282.48-10.80Q281.41-9.75 280.73-8.43L280.73-8.43L280.73-8.43Q280.05-7.10 280.05-5.74L280.05-5.74L280.05-5.74Q280.05-5.37 280.13-4.98L280.13-4.98L280.13-4.98Q280.20-4.59 280.42-4.27L280.42-4.27L280.42-4.27Q280.64-3.94 281.06-3.73L281.06-3.73L281.06-3.73Q281.48-3.52 282.19-3.52L282.19-3.52L282.19-3.52Q283.55-3.52 284.82-4.16L284.82-4.16L284.82-4.16Q286.10-4.80 287.11-5.86L287.11-5.86L287.11-5.86Q288.12-6.91 288.73-8.24L288.73-8.24L288.73-8.24Q289.34-9.56 289.34-10.90L289.34-10.90L289.34-10.90Q289.34-11.25 289.28-11.65L289.28-11.65L289.28-11.65Q289.22-12.05 289.03-12.38L289.03-12.38L289.03-12.38Q288.84-12.70 288.49-12.93L288.49-12.93L288.49-12.93Q288.14-13.15 287.55-13.15zM289.52-3.70L289.52-3.70L289.52-3.70Q287.53-1.31 285.29-0.20L285.29-0.20L285.29-0.20Q283.05 0.91 280.45 0.91L280.45 0.91L280.45 0.91Q279.02 0.91 278.04 0.50L278.04 0.50L278.04 0.50Q277.05 0.09 276.45-0.61L276.45-0.61L276.45-0.61Q275.84-1.31 275.57-2.25L275.57-2.25L275.57-2.25Q275.30-3.19 275.30-4.24L275.30-4.24L275.30-4.24Q275.30-5.44 275.60-6.71L275.60-6.71L275.60-6.71Q275.91-7.99 276.40-9.19L276.40-9.19L276.40-9.19Q276.73-9.96 276.94-10.48L276.94-10.48L276.94-10.48Q277.15-10.99 277.29-11.36L277.29-11.36L277.29-11.36Q277.43-11.72 277.54-11.99L277.54-11.99L277.54-11.99Q277.64-12.26 277.76-12.55L277.76-12.55L277.76-12.55Q277.88-12.84 278.04-13.23L278.04-13.23L278.04-13.23Q278.20-13.62 278.48-14.23L278.48-14.23L285.33-29.44L285.33-29.44Q285.47-29.74 285.74-30.02L285.74-30.02L285.74-30.02Q286.01-30.30 286.36-30.53L286.36-30.53L286.36-30.53Q286.71-30.75 287.12-30.88L287.12-30.88L287.12-30.88Q287.53-31.01 287.95-31.01L287.95-31.01L287.95-31.01Q289.03-31.01 289.46-30.59L289.46-30.59L289.46-30.59Q289.90-30.16 289.90-29.55L289.90-29.55L289.90-29.55Q289.90-29.09 289.66-28.54L289.66-28.54L289.66-28.54Q289.43-27.98 289.15-27.52L289.15-27.52L289.15-27.52Q287.41-24.19 285.87-20.75L285.87-20.75L285.87-20.75Q284.32-17.32 282.59-13.97L282.59-13.97L282.59-13.97Q283.34-14.55 284.18-15.11L284.18-15.11L284.18-15.11Q285.02-15.66 285.94-16.09L285.94-16.09L285.94-16.09Q286.85-16.52 287.84-16.79L287.84-16.79L287.84-16.79Q288.82-17.06 289.85-17.06L289.85-17.06L289.85-17.06Q290.58-17.06 291.33-16.78L291.33-16.78L291.33-16.78Q292.08-16.50 292.70-15.96L292.70-15.96L292.70-15.96Q293.32-15.42 293.71-14.64L293.71-14.64L293.71-14.64Q294.09-13.85 294.09-12.82L294.09-12.82L294.09-12.82Q294.09-12.59 293.95-11.88L293.95-11.88L293.95-11.88Q293.81-11.18 293.54-10.30L293.54-10.30L293.54-10.30Q293.27-9.42 292.89-8.50L292.89-8.50L292.89-8.50Q292.50-7.57 292.03-6.87L292.03-6.87L292.03-6.87Q292.20-6.61 292.45-6.55L292.45-6.55L292.45-6.55Q292.71-6.49 293.04-6.49L293.04-6.49L293.04-6.49Q294.12-6.49 295.18-6.77L295.18-6.77L295.18-6.77Q296.25-7.05 297.20-7.46L297.20-7.46L297.20-7.46Q298.15-7.88 298.95-8.32L298.95-8.32L298.95-8.32Q299.74-8.77 300.28-9.09L300.28-9.09L300.28-9.09Q300.56-9.40 300.89-9.40L300.89-9.40L300.89-9.40Q301.29-9.40 301.58-9.05L301.58-9.05L301.58-9.05Q301.88-8.70 301.88-8.13L301.88-8.13L301.88-8.13Q301.88-7.59 301.65-7.07L301.65-7.07L301.65-7.07Q301.43-6.54 300.84-5.91L300.84-5.91L300.84-5.91Q299.79-5.27 298.72-4.71L298.72-4.71L298.72-4.71Q297.66-4.15 296.55-3.74L296.55-3.74L296.55-3.74Q295.45-3.33 294.32-3.08L294.32-3.08L294.32-3.08Q293.18-2.84 292.01-2.84L292.01-2.84L292.01-2.84Q291.26-2.84 290.63-3.05L290.63-3.05L290.63-3.05Q289.99-3.26 289.52-3.70" fill="#ffbe4a" stroke="none" stroke-width="none" transform="translate(-150.21500873565674,12.583258765293998)" style="fill: rgb(255, 51, 0);"></path></g></g>
+  </g>
+  <g filter="url(#firework)">
+  <g transform="translate(42.76501145129141,-53.0382074827498) scale(0.8400288488985149)"><g class="ld-explode" style="animation-delay:-0.7s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#00ddff" style="animation-delay:-0.7s"></path>
+</g></g></g><g transform="translate(-55.934822916920155,-38.22277189633804) scale(0.5794107363697233)"><g class="ld-explode" style="animation-delay:-0.8s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#5dff4a" style="animation-delay:-0.8s"></path>
+</g></g></g><g transform="translate(-52.92491038904789,-40.731924482978) scale(0.6572233071398934)"><g class="ld-explode" style="animation-delay:-0.9s"><g style="transform:rotate(0deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(22.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(45deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(67.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(90deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(112.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(135deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(157.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(180deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(202.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(225deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(247.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(270deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(292.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(315deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l7 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g><g style="transform:rotate(337.5deg);transform-origin:0px 0px">
+  <path class="ld-pop" d="M30 0l3 0" stroke-width="3" stroke-linecap="round" stroke="#ff3300" style="animation-delay:-0.9s"></path>
+</g></g></g>
+  </g>
+</g>
+
+</g>
+<style id="breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652" data-anikit="">@keyframes breath-382bcaa2-ef3b-49fb-8b02-ee6b76cdd652
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.9647,0.2413,-0.0705,0.7911);
+    transform: scale(0.9099999999999999);
+  }
+  51% {
+    animation-timing-function: cubic-bezier(0.9226,0.2631,-0.0308,0.7628);
+    transform: scale(1.02994);
+  }
+  100% {
+    transform: scale(0.9099999999999999);
+  }
+}</style></svg>

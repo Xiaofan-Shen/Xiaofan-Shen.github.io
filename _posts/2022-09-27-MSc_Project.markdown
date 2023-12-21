@@ -2,9 +2,9 @@
 layout: post
 title:  "Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot"
 date:   2022-09-27 00:00:00 +0000
-tags: Robotics VR
+tags: Robotics VR Haptic
 color: rgb(200,200,200)
-cover: '/assets/2022-09-27-MSc_project/trackingarea.png'
+cover: '/assets/2022-09-27-MSc_project/plan.png'
 # subtitle: ''
 ---
 This project introduces a system that provides a dynamic table-scale haptic feedback for virtual reality, by using a robot that can move one mug on the table to map three virtual mugs in virtual reality. 
