@@ -146,11 +146,23 @@ var _hmt = _hmt || [];
   
 
   <!-- 文章内容 -->
-  <p>This project introduces a system that provides a dynamic table-scale haptic feedback for virtual reality, by using a robot that can move one mug on the table to map three virtual mugs in virtual reality.</p>
-
-<p>By synchronizing information from the real and virtual worlds and giving commands to the robot, users can touch and lift objects in virtual content with their hands carrying the controller. When the user gives a demand to touch a specific mug, the robot is activated to reconfigure the real world.</p>
-
-<p>Similarly, virtual contents also changes along with operation conducted to the real mug (such as moving it or lifting it by the user) to achieve a sense of reality.</p>
+  <p>This project ‘face morphing’ is divided into 7 parts to complete a smooth transfer video from two
+faces;</p>
+<ol>
+  <li>‘dlib’ face landmark detector is used to detect 68 landmarks on 2 images, as 68 landmarks are
+not covering all the face, 20 landmarks are manually added, including 16 landmarks on the face,
+while 4 points locates the background, so that the background could also transfer smoothly;</li>
+  <li>the standard Delaunay Triangulation is used to visualize triangulation of vertices(landmarks);</li>
+  <li>get the interpolating between image1 and image2 by applying
+x int = (x img1 + ximg2)/2
+y int = (y img1 + yimg2)/2</li>
+  <li>Getting parameters of the affine warp when vertices of two triangle were given, and between
+every pairs of corresponding triangles, Affine warp was estimated;</li>
+  <li>Find the all coordinates which are inside the given triangle, and then a labeled image was created
+by dividing face into parts;</li>
+  <li>Get the in - between image for a given ‘w’</li>
+  <li>Create the transfer video;</li>
+</ol>
 
 <iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/0kpqJpmSTOg" frameborder="0"></iframe>
 

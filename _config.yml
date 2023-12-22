@@ -20,14 +20,16 @@ NickName: 'Fan'
 webtitle: "Fan's Robot Lab"
 bio: "Hey there, I'm Xiaofan Shen."
 about: true
-aboutyou: "I graduated with a bachelor's degree in Electrical Engineering from the University of Liverpool, and later switched gears to pursue a master's at UCL in Robotics and Computation. I have a deep passion for technology, and I particularly enjoy tinkering with Raspberry Pi to create fun and interesting projects."
+aboutyou: "I graduated with a bachelor's degree in Electrical Engineering from the University of Liverpool, and later switched gears to pursue a master's at UCL in Robotics and Computation. I have a deep passion for technology, and I particularly enjoy tinkering with Raspberry Pi to create fun and interesting projects.
+I have two dogs and one cat. I am located in both the UK and China. I love going on self-driving hikes and camping trips with my dogs. I also have a passion for traveling, exploring the local customs of different countries and regions, and capturing stories through my camera lens."
+ 
 portraits: '/assets/Fanpic.png' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   # mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
+  weixin: '/assets/Fanpic.png'
   #qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   linkedin: 'https://www.linkedin.com/in/xiaofan-shen/'
   github: 'https://github.com/Xiaofan-Shen'
@@ -85,8 +87,8 @@ social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
 baidu: true
 baidu-url: ''
 # 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: false
-google-ID: ''
+google: true
+google-ID: 'G-5FZ705XRJX'
 
 # 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
 color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
