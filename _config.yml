@@ -4,10 +4,17 @@ description: 'your web description'
 keywords: 'Robot, Machine Learning, Wood Skill, Worldwide Journey'
 url: 'https://Xiaofan-Shen.github.io' # your host
 
+defaults:
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    permalink: "/about/:title/"
+
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
-  Homepage: '/'
-  My Projects: '/projects.html'
+  Homepage: '/about.html'
+  My Projects: '/'
   Timeline: '/timeline.html'
   Tags: '/tags.html'
   My Fancy Trip: '/mytrip.html'
@@ -47,6 +54,7 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
 # 分页
 paginate: 10
 paginatepath: ['page:num']
+source: ''
 
 # since
 footer:
