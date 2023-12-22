@@ -1,5 +1,5 @@
 ---
-layout: div
+layout: post
 title: 'A Power Optimized Method in 
 Android Systems'
 date: 2019-08-06
