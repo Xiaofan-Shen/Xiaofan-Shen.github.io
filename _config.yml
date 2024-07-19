@@ -47,21 +47,8 @@ aboutyou: "I graduated with a bachelor's degree in Electrical Engineering from t
 <br> 🐍Python Programming
 <br> ⚙️Machine Learning: k-Nearest Neighbors, kNN, Decision Tree, Support Vector Machine, Neural Network, Clustering
 </blockquote> 
- 
 "
-# 两栏示例
-columns:
-  - title: "左栏标题"
-    content:
-      - "左栏内容1"
-      - "左栏内容2"
-      - "左栏内容3"
-
-  - title: "右栏标题"
-    content:
-      - "右栏内容1"
-      - "右栏内容2"
-      - "右栏内容3"
+ 
 
 portraits: '/assets/Fanpic.png' # your portraits image file path
 

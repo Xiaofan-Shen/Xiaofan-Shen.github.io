@@ -1,4 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-19T01:02:08+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Kalman Filter Implenmented in Python</title><link href="http://localhost:4000/2024/07/18/Kalman-filter-in-Python.html" rel="alternate" type="text/html" title="Kalman Filter Implenmented in Python" /><published>2024-07-18T01:00:00+01:00</published><updated>2024-07-18T01:00:00+01:00</updated><id>http://localhost:4000/2024/07/18/Kalman%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/07/18/Kalman-filter-in-Python.html"><![CDATA[<h1 id="kalman-filter">Kalman Filter</h1>
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="your web description" />
+<meta name="keywords" content="Robot, Machine Learning, Wood Skill, Worldwide Journey" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<!-- <script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script> -->
+<script src="/assets/fonts/font_856428_y9z6nq7zf5.js"></script>
+
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>Kalman Filter Implenmented in Python</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FZ705XRJX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5FZ705XRJX');
+</script>
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(200,200,200) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(200,200,200);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Fan's Robot Lab</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/about.html" style="color: white;">Homepage</a></li>
+              
+                <li><a href="/" style="color: white;">My Projects</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">Timeline</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">Tags</a></li>
+              
+                <li><a href="/mytrip.html" style="color: white;">My Fancy Trip</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/about.html"><li>Homepage</li></a>
+        
+          <a href="/"><li>My Projects</li></a>
+        
+          <a href="/timeline.html"><li>Timeline</li></a>
+        
+          <a href="/tags.html"><li>Tags</li></a>
+        
+          <a href="/mytrip.html"><li>My Fancy Trip</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Kalman Filter Implenmented in Python</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(200,200,200);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(200,200,200)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(200,200,200);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Kalman Filter Implenmented in Python</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2022/09/27/MSc_Project.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(200,200,200)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(200,200,200);"><sapn class="main">Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(200,200,200);border-bottom: 2px solid rgb(200,200,200);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2022/09/27/MSc_Project.html" class="rightchange" style="border-left: 1px solid rgb(200,200,200);border-bottom: 2px solid rgb(200,200,200);"><span>下一篇<br><br>Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+
+  <!-- 文章内容 -->
+  <h1 id="kalman-filter">Kalman Filter</h1>
 
 <p>In many real-world applications, such as tracking the position of a moving vehicle, we rely on models to predict the state of a system. However, these predictions are never perfect due to uncertainties and noise in the system. To improve the accuracy of our state estimates, we use a method called the Kalman filtering.</p>
 
@@ -448,42 +608,149 @@ Calculate the Kalman gain $ K $, which determines how much the predicted state e
 
 <p><strong>Conclusion</strong></p>
 
-<p>The Kalman filter demonstrates strong performance in tracking the position of the object, with predictions closely matching the true values. The confidence interval for position estimation remains narrow, indicating high confidence in these predictions, except for fluctuations near zero where variability increases.    For velocity, while the Kalman filter accurately tracks changes, there are some deviations observed during rapid changes. The confidence interval for velocity estimates is high, suggesting lower uncertainty in velocity predictions. Same to the position prediction, around zero the fluctuations are more pronounced.  Overall, the Kalman filter effectively reduces noise and provides reliable state estimation for dynamic systems.</p>]]></content><author><name>true</name></author><category term="KalmanFilter" /><category term="StateEstimation" /><category term="Tutorial" /><summary type="html"><![CDATA[Kalman Filter]]></summary></entry><entry><title type="html">Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot</title><link href="http://localhost:4000/2022/09/27/MSc_Project.html" rel="alternate" type="text/html" title="Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot" /><published>2022-09-27T01:00:00+01:00</published><updated>2022-09-27T01:00:00+01:00</updated><id>http://localhost:4000/2022/09/27/MSc_Project</id><content type="html" xml:base="http://localhost:4000/2022/09/27/MSc_Project.html"><![CDATA[<h3 id="introduction">Introduction</h3>
-<p>This project introduces a system that provides a dynamic table-scale haptic feedback for virtual reality, by using a robot that can move one mug on the table to map three virtual mugs in virtual reality. 
-<img src="/assets/2022-09-27-MSc_Project/structure.png" alt="Description of the image" width="400" height="220" /></p>
+<p>The Kalman filter demonstrates strong performance in tracking the position of the object, with predictions closely matching the true values. The confidence interval for position estimation remains narrow, indicating high confidence in these predictions, except for fluctuations near zero where variability increases.    For velocity, while the Kalman filter accurately tracks changes, there are some deviations observed during rapid changes. The confidence interval for velocity estimates is high, suggesting lower uncertainty in velocity predictions. Same to the position prediction, around zero the fluctuations are more pronounced.  Overall, the Kalman filter effectively reduces noise and provides reliable state estimation for dynamic systems.</p>
 
-<h4 id="hardware">Hardware</h4>
-<p>An accurate tracking system is essential for tracking objects in this project. A headset mounted display (HMD), two controllers, two lighthouse BASE stations, and two VIVE
-trackers 2.0 made up the setup of the Vive System.
- <img src="/assets/2022-09-27-MSc_Project/trackingarea.png" alt="Description of the image" width="580" height="380" />
- <br />
-By synchronizing information from the real and virtual worlds and giving commands to the robot, users can touch and lift objects in virtual content with their hands carrying the controller. When the user gives a demand to touch a specific mug, the robot is activated to reconfigure the real world. 
- <img src="/assets/photos/userthink.png" alt="Description of the image" width="560" height="360" />
-Similarly, virtual contents also changes along with operation conducted to the real mug (such as moving it or lifting it by the user) to achieve a sense of reality.</p>
 
-<h4 id="experiments">Experiments</h4>
-<iframe type="text/html" width="100%" height="385" src="https://youtube.com/embed/uQ05KesgF34" frameborder="0"></iframe>]]></content><author><name>true</name></author><category term="Robotics" /><category term="VR" /><category term="Haptic" /><summary type="html"><![CDATA[Introduction This project introduces a system that provides a dynamic table-scale haptic feedback for virtual reality, by using a robot that can move one mug on the table to map three virtual mugs in virtual reality.]]></summary></entry><entry><title type="html">Face morping</title><link href="http://localhost:4000/2022/04/07/Face-morping.html" rel="alternate" type="text/html" title="Face morping" /><published>2022-04-07T01:00:00+01:00</published><updated>2022-04-07T01:00:00+01:00</updated><id>http://localhost:4000/2022/04/07/Face%20morping</id><content type="html" xml:base="http://localhost:4000/2022/04/07/Face-morping.html"><![CDATA[<p>This project ‘face morphing’ is divided into 7 parts to complete a smooth transfer video from two
-faces;</p>
-<ol>
-  <li>‘dlib’ face landmark detector is used to detect 68 landmarks on 2 images, as 68 landmarks are
-not covering all the face, 20 landmarks are manually added, including 16 landmarks on the face,
-while 4 points locates the background, so that the background could also transfer smoothly;</li>
-  <li>the standard Delaunay Triangulation is used to visualize triangulation of vertices(landmarks);</li>
-  <li>get the interpolating between image1 and image2 by applying
-x int = (x img1 + ximg2)/2
-y int = (y img1 + yimg2)/2</li>
-  <li>Getting parameters of the affine warp when vertices of two triangle were given, and between
-every pairs of corresponding triangles, Affine warp was estimated;</li>
-  <li>Find the all coordinates which are inside the given triangle, and then a labeled image was created
-by dividing face into parts;</li>
-  <li>Get the in - between image for a given ‘w’</li>
-  <li>Create the transfer video;</li>
-</ol>
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
 
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/0kpqJpmSTOg" frameborder="0"></iframe>]]></content><author><name>true</name></author><category term="Robotics" /><category term="VR" /><category term="Haptic" /><summary type="html"><![CDATA[This project ‘face morphing’ is divided into 7 parts to complete a smooth transfer video from two faces; ‘dlib’ face landmark detector is used to detect 68 landmarks on 2 images, as 68 landmarks are not covering all the face, 20 landmarks are manually added, including 16 landmarks on the face, while 4 points locates the background, so that the background could also transfer smoothly; the standard Delaunay Triangulation is used to visualize triangulation of vertices(landmarks); get the interpolating between image1 and image2 by applying x int = (x img1 + ximg2)/2 y int = (y img1 + yimg2)/2 Getting parameters of the affine warp when vertices of two triangle were given, and between every pairs of corresponding triangles, Affine warp was estimated; Find the all coordinates which are inside the given triangle, and then a labeled image was created by dividing face into parts; Get the in - between image for a given ‘w’ Create the transfer video;]]></summary></entry><entry><title type="html">Immersive Virtual Reality Cooking Game</title><link href="http://localhost:4000/2022/03/01/VR-game.html" rel="alternate" type="text/html" title="Immersive Virtual Reality Cooking Game" /><published>2022-03-01T00:00:00+00:00</published><updated>2022-03-01T00:00:00+00:00</updated><id>http://localhost:4000/2022/03/01/VR%20game</id><content type="html" xml:base="http://localhost:4000/2022/03/01/VR-game.html"><![CDATA[<blockquote>
-  <p>This project is an engaging VR game that created an elegant environment infused with Chinese elements in Unity. Multiple players collaborated to accomplish tasks, involving research for CC0 prefabs and/or models, environment design and building, teleportation, object scripts, menu display, ingredient handling, scoring system, upgrades, and rigorous testing.</p>
-</blockquote>]]></content><author><name>Jekyll</name></author><category term="VR" /><category term="Game" /><summary type="html"><![CDATA[This project is an engaging VR game that created an elegant environment infused with Chinese elements in Unity. Multiple players collaborated to accomplish tasks, involving research for CC0 prefabs and/or models, environment design and building, teleportation, object scripts, menu display, ingredient handling, scoring system, upgrades, and rigorous testing.]]></summary></entry><entry><title type="html">A Power Optimized Method in Android Systems</title><link href="http://localhost:4000/2019/08/06/android-system.html" rel="alternate" type="text/html" title="A Power Optimized Method in Android Systems" /><published>2019-08-06T00:00:00+01:00</published><updated>2019-08-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/08/06/android%20system</id><content type="html" xml:base="http://localhost:4000/2019/08/06/android-system.html"><![CDATA[<h2 id="abstract">Abstract</h2>
 
-<p>How the Suspend/Resume mechanism of smartphone influences the power consumption is examined in the dissertation. Specifically, various unimportant and not so urgent network packets keep awakening the operating system (OS) at the time it is under suspend mode, and switch it from suspend to resume mode
-continually, which results in more power consumption. Accordingly, an innovative optimization technique was suggested in this paper in order that the awakening of OS can be postponed and the lasting hour of suspend mode can be lengthened to decrease power consumption. Some experiments are also carried out, with
-the result data suggesting that such technique is an effective way to reduce power consumption by greater than 7.63%. It proves that this technique is workable.</p>]]></content><author><name>Jekyll</name></author><category term="Article" /><summary type="html"><![CDATA[Abstract]]></summary></entry></feed>
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+<!-- 
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+ -->
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>FAN Bot ©
+  
+  
+    2023
+    -
+  
+  2024
+  <br>
+  <!-- Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span> -->
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "all" },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script 
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+  type="text/javascript">
+
+</script>
+
+</body>
+</html>
