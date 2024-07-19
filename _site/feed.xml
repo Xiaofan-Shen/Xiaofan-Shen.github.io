@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-19T01:02:08+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Kalman Filter Implenmented in Python</title><link href="http://localhost:4000/2024/07/18/Kalman-filter-in-Python.html" rel="alternate" type="text/html" title="Kalman Filter Implenmented in Python" /><published>2024-07-18T01:00:00+01:00</published><updated>2024-07-18T01:00:00+01:00</updated><id>http://localhost:4000/2024/07/18/Kalman%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/07/18/Kalman-filter-in-Python.html"><![CDATA[<h1 id="kalman-filter">Kalman Filter</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-19T13:23:41+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Kalman Filter Implemented in Python</title><link href="http://localhost:4000/2024/07/18/Kalman-filter-in-Python.html" rel="alternate" type="text/html" title="Kalman Filter Implemented in Python" /><published>2024-07-18T01:00:00+01:00</published><updated>2024-07-18T01:00:00+01:00</updated><id>http://localhost:4000/2024/07/18/Kalman%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/07/18/Kalman-filter-in-Python.html"><![CDATA[<h1 id="kalman-filter">Kalman Filter</h1>
 
 <p>In many real-world applications, such as tracking the position of a moving vehicle, we rely on models to predict the state of a system. However, these predictions are never perfect due to uncertainties and noise in the system. To improve the accuracy of our state estimates, we use a method called the Kalman filtering.</p>
 
@@ -448,7 +448,128 @@ Calculate the Kalman gain $ K $, which determines how much the predicted state e
 
 <p><strong>Conclusion</strong></p>
 
-<p>The Kalman filter demonstrates strong performance in tracking the position of the object, with predictions closely matching the true values. The confidence interval for position estimation remains narrow, indicating high confidence in these predictions, except for fluctuations near zero where variability increases.    For velocity, while the Kalman filter accurately tracks changes, there are some deviations observed during rapid changes. The confidence interval for velocity estimates is high, suggesting lower uncertainty in velocity predictions. Same to the position prediction, around zero the fluctuations are more pronounced.  Overall, the Kalman filter effectively reduces noise and provides reliable state estimation for dynamic systems.</p>]]></content><author><name>true</name></author><category term="KalmanFilter" /><category term="StateEstimation" /><category term="Tutorial" /><summary type="html"><![CDATA[Kalman Filter]]></summary></entry><entry><title type="html">Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot</title><link href="http://localhost:4000/2022/09/27/MSc_Project.html" rel="alternate" type="text/html" title="Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot" /><published>2022-09-27T01:00:00+01:00</published><updated>2022-09-27T01:00:00+01:00</updated><id>http://localhost:4000/2022/09/27/MSc_Project</id><content type="html" xml:base="http://localhost:4000/2022/09/27/MSc_Project.html"><![CDATA[<h3 id="introduction">Introduction</h3>
+<p>The Kalman filter demonstrates strong performance in tracking the position of the object, with predictions closely matching the true values. The confidence interval for position estimation remains narrow, indicating high confidence in these predictions, except for fluctuations near zero where variability increases.    For velocity, while the Kalman filter accurately tracks changes, there are some deviations observed during rapid changes. The confidence interval for velocity estimates is high, suggesting lower uncertainty in velocity predictions. Same to the position prediction, around zero the fluctuations are more pronounced.  Overall, the Kalman filter effectively reduces noise and provides reliable state estimation for dynamic systems.</p>]]></content><author><name>true</name></author><category term="KalmanFilter" /><category term="StateEstimation" /><category term="Tutorial" /><summary type="html"><![CDATA[Kalman Filter]]></summary></entry><entry><title type="html">Computer Science fundamental</title><link href="http://localhost:4000/2024/07/18/Computer_Science.html" rel="alternate" type="text/html" title="Computer Science fundamental" /><published>2024-07-18T01:00:00+01:00</published><updated>2024-07-18T01:00:00+01:00</updated><id>http://localhost:4000/2024/07/18/Computer_Science</id><content type="html" xml:base="http://localhost:4000/2024/07/18/Computer_Science.html"><![CDATA[<p>Owner: Xiaofan SHEN
+Tags: Infrastructure</p>
+
+<h1 id="python">Python</h1>
+
+<h3 id="variables"><strong>Variables</strong></h3>
+
+<p>A <strong>variable</strong> in a program acts like a container. It can be used to store a string, a number, or other kinds of data.</p>
+
+<p><img src="Computer%20Science%20d1ebabbae65e4cd39543506166c5471f/box-and-tangible-value-4-mol6CH.png" alt="box-and-tangible-value-4-mol6CH.png" /></p>
+
+<p><strong>str1.find(str2)</strong></p>
+
+<aside>
+💡 **str1.find(str2)**
+
+</aside>
+
+<h1 id="parallelism">Parallelism</h1>
+
+<ul>
+  <li>When multiple workers can split up a problem without adding in coordination overhead, computer scientists sometimes call the problem <strong>embarrassingly parallel</strong>.</li>
+  <li></li>
+</ul>
+
+<p><img src="Computer%20Science%20d1ebabbae65e4cd39543506166c5471f/Untitled.png" alt="Untitled" /></p>
+
+<h2 id="pipelining">Pipelining</h2>
+
+<p><strong>Pipelining</strong> is a form of parallelism where tasks are solved faster by having multiple tasks simultaneously at various levels of completion.</p>
+
+<p>Parallelism can improve performance by improving <strong>latency</strong> (the time that a task takes from beginning to end) or by improving <strong>throughput</strong> (the amount of tasks that can complete during a given interval of time).</p>
+
+<h1 id="resource-tradeoffs"><strong>Resource Tradeoffs</strong></h1>
+
+<p>Inexpensive computers can perform 3 basic computations in a nanosecond — that’s one (wildly oversimplified) way of describing what it means to be a “3 GHz” computer.</p>
+
+<h2 id="caching">Caching</h2>
+
+<p><strong>Caching</strong> is a general problem-solving approach that provides a much more flexible way of dealing with certain resource tradeoffs.</p>
+
+<p><img src="Computer%20Science%20d1ebabbae65e4cd39543506166c5471f/computer-processor-diagram-ULTlpu.png" alt="**Hardware caches**" /></p>
+
+<p><strong>Hardware caches</strong></p>
+
+<h2 id="api">API</h2>
+
+<p>An API is an interface or menu that different programs can use to communicate with each other.</p>
+
+<aside>
+💡 An **interface** is an abstraction that manages complexity by defining how to **interact** with a process while hiding how the process **actually** gets donLisLis
+
+</aside>
+
+<p><em>“向荆市长隐藏的信息允许档案部在不打扰荆市长的情况下改变其工作方式。这是界面意义的重要组成部分。”</em></p>
+
+<h2 id="binary-search">Binary Search</h2>
+
+<p><strong>Bridges of Königsberg</strong></p>
+
+<p><img src="Computer%20Science%20d1ebabbae65e4cd39543506166c5471f/konigsberg-bridge_-simplified-w-nsew-2-xpQnkF.png" alt="konigsberg-bridge_-simplified-w-nsew-2-xpQnkF.png" /></p>
+
+<p>图中每条边都经过一次的路径称为<strong>欧拉路径</strong>。</p>
+
+<aside>
+💡 一条路径只有一个端点和一个起点，因此如果一个图有两个以上的顶点，且连接边的数量为奇数，那么就不可能存在欧拉路径。
+
+</aside>
+
+<aside>
+💡 移除柯尼斯堡的**任何一座**桥都只留下两个具有奇数条连接边的顶点。这意味着移除**任何**一座桥都可以形成欧拉路径。
+
+</aside>
+
+<h2 id="breadth-first-search--depth-first-search"><strong>Breadth-first search  Depth-first search</strong></h2>
+
+<p>A <strong>list</strong> is a data type for storing multiple items of the same type that are related and belong together.</p>
+
+<h2 id="list">List</h2>
+
+<p><img src="Computer%20Science%20d1ebabbae65e4cd39543506166c5471f/diff-variable-names-okay-2TIHqg.png" alt="diff-variable-names-okay-2TIHqg.png" /></p>
+
+<h2 id="pseudocode"><strong>pseudocode</strong></h2>
+
+<p>Writing the logic of programs in English is called <strong>pseudocode</strong>.</p>
+
+<p>An <strong>algorithm</strong> is a step by step process designed to achieve some outcome, and computers are the fastest machines ever conceived for carrying out step by step processes!</p>
+
+<p>That means that the study of algorithms is a core aim of computer science, but their use transcends any one discipline.</p>
+
+<p>Code worked or delivered</p>
+
+<p>When a computer scientist says an algorithm “works,” that doesn’t just mean it promises to produce a correct result. It also has to deliver on that promise, <em>finish</em>, and produce the result, on every possible input.</p>
+
+<p>Making sure an algorithm always finishes and produces a result is called <em>proving termination</em>, and it can be a little bit tricky!</p>
+
+<p>Langton’s ant、Boolean</p>
+
+<h2 id="aconditional-statementuses-a-boolean-expression-to-determine-the-code-that-is-run">A <strong>conditional statement</strong> uses a Boolean expression to determine the code that is run.</h2>
+
+<p>Dictionary</p>
+
+<p><img src="Computer%20Science%20d1ebabbae65e4cd39543506166c5471f/Untitled%201.png" alt="Untitled" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cleaned_word = word.lower().strip(punctuation)
+</code></pre></div></div>
+
+<p>reader = open(‘data/jekyll.txt’)
+punctuation = ‘.;,-“’”:?—‘!()_’</p>
+
+<p>freq_dict = {}
+for line in reader:
+for word in line.split():
+cleaned_word = word.lower().strip(punctuation)
+if cleaned_word in freq_dict:
+freq_dict[cleaned_word]+=1
+else:
+freq_dict[cleaned_word]=1</p>
+
+<p>print(len(freq_dict))</p>
+
+<h2 id="counter"><strong>Counter</strong></h2>]]></content><author><name>true</name></author><category term="Computer" /><category term="Science" /><category term="fundamental" /><summary type="html"><![CDATA[Owner: Xiaofan SHEN Tags: Infrastructure]]></summary></entry><entry><title type="html">Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot</title><link href="http://localhost:4000/2022/09/27/MSc_Project.html" rel="alternate" type="text/html" title="Table-scale Dynamic Haptic feedback for virtual reality utilized an object-moving robot" /><published>2022-09-27T01:00:00+01:00</published><updated>2022-09-27T01:00:00+01:00</updated><id>http://localhost:4000/2022/09/27/MSc_Project</id><content type="html" xml:base="http://localhost:4000/2022/09/27/MSc_Project.html"><![CDATA[<h3 id="introduction">Introduction</h3>
 <p>This project introduces a system that provides a dynamic table-scale haptic feedback for virtual reality, by using a robot that can move one mug on the table to map three virtual mugs in virtual reality. 
 <img src="/assets/2022-09-27-MSc_Project/structure.png" alt="Description of the image" width="400" height="220" /></p>
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Kalman Filter Implenmented in Python"
+title:  "Kalman Filter Implemented in Python"
 date:   2024-07-18 00:00:00 +0000
 tags: KalmanFilter StateEstimation Tutorial
 color: rgb(200,200,200)
 cover: '/assets/2024-07-18-KalmanFilter/Kalman_filter_cover.png'
-# Kalman Filter Implenmented in Python 
+# Kalman Filter Implemented in Python 
 ---
 
 # Kalman Filter
