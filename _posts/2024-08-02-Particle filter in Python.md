@@ -18,12 +18,12 @@ For example, in robot localization, particle filter excels in accurately trackin
 
 In this example, we will apply it into the tracking of dog's postion.
 The original video:
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/1LYmxfMimBQ" frameborder="0"></iframe>
-
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/mOx5uBxvOnA" frameborder="0"></iframe>
+ 
 __The performance__:
 
-The video features a running dog being tracked using a particle filter. The red box represents the position predicted by the particle with the highest weight, indicating the most likely position of the dog. The green box represents the weighted average position of all particles, providing an overall estimate by combining the predictions of all particles. This dual-box system helps in accurately tracking the dog's movement amidst challenging and dynamic environments.
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/bl6VRCHkETI" frameborder="0"></iframe>
+The video features a running cat being tracked using a particle filter. The red box represents the position predicted by the particle with the highest weight, indicating the most likely position of the dog. The green box represents the weighted average position of all particles, providing an overall estimate by combining the predictions of all particles. This dual-box system helps in accurately tracking the cat's movement amidst challenging and dynamic environments.
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/4fTfw4pCu_I" frameborder="0"></iframe> 
 
 __Steps of particle filter__
 
@@ -124,7 +124,9 @@ $$
 
 **Where:**
 
- $$ p(y_t | x_t^{(i)}) $$ is the likelihood of the observation given the particle's state.
+ $$
+ p(y_t | x_t^{(i)})
+ $$ is the likelihood of the observation given the particle's state.
 
 
 ```python
@@ -137,10 +139,7 @@ def compute_weight(p, q):
     return np.exp(20 * bc)
 ```
 
-- Compute the histogram:
-
-
-- Normalize the histogram:
+This part computes the histogram and normalize the histogram.
 
 
 
@@ -168,7 +167,7 @@ def compute_norm_hist(image, state):
 Where:
 - Extract the ROI based on the particle's state and the bounding box dimensions.
 - Quantize color values to create a histogram hist.
-- norm_hist is the normalized histogram.
+- ``norm_hist`` is the normalized histogram.
 
 ### 5. Resample Particles
 Resampling is done based on particle weights. This step ensures that particles with higher weights are more likely to be selected.
@@ -190,8 +189,8 @@ def sample_particle(particles_states, weights):
 ```
 
 Where:
-- sampling_weights is the cumulative sum of normalized weights.
-- cross_diff is used to match random numbers with the cumulative weights to select particles.
+- ``sampling_weights`` is the cumulative sum of normalized weights.
+- ``cross_diff`` is used to match random numbers with the cumulative weights to select particles.
 
 ### 6. Draw Bounding Box
 Draw bounding boxes around the object based on the weighted average position and the position of the particle with the maximum weight.
@@ -214,8 +213,8 @@ def draw_bounding_box(image, states, weights, with_max=True):
 ```
 
 Where:
-- mean_box is the weighted average position of the particles.
-- Draw bounding boxes for both the weighted average position and the particle with the maximum weight.
+- ``mean_box`` is the weighted average position of the particles.
+- ``Draw bounding boxes`` for both the weighted average position and the particle with the maximum weight.
 
 ### 7.Draw Particles
 Visualize particles on the image. The size of each particle is proportional to its weight.
@@ -230,7 +229,7 @@ def draw_particles(image, states, weights):
     return image_with_particles
 ```
 
-Use cv2.circle to draw each particle, with the size proportional to the particle's weight.
+Use ``cv2.circle`` to draw each particle, with the size proportional to the particle's weight.
 
 ### 8. Main Loop
 Process each video frame iteratively, performing prediction, update, resampling, and visualization.
@@ -245,8 +244,8 @@ if not cap.isOpened():
     exit(1)
 ```
 
-- Explanation: cv2.VideoCapture creates an object to read from the video file DSCF2822.MP4.
-- Check: The if not cap.isOpened() block verifies that the video file was successfully opened. If not, it prints an error message and exits the program.
+- Explanation: ``cv2.VideoCapture`` creates an object to read from the video file DSCF2822.MP4.
+- Check: The if not ``cap.isOpened()`` block verifies that the video file was successfully opened. If not, it prints an error message and exits the program.
 
 #### Read the First Frame
 
@@ -258,7 +257,7 @@ if not ret:
     exit(1)
 ```
 
-- Explanation: cap.read() reads the first frame from the video.
+- Explanation: ``cap.read()`` reads the first frame from the video.
 - Check: If reading the first frame fails (ret is False), it prints an error message and exits.
 
 ### Initialization of Number of Particles and Initial State
@@ -270,7 +269,7 @@ s_init = np.array([1600, 700, 0, 0])  # initial state [x_center, y_center, x_vel
 ```
 
 - set the number of particles used in the particle filter to 500. More particles generally provide better tracking accuracy but require more computation.
-- s_init represents the initial state of the object being tracked. It is an array with four elements:x and y position and velocity.
+- ``s_init`` represents the initial state of the object being tracked. It is an array with four elements:x and y position and velocity.
 
 
 Bounding Box Dimensions: 
@@ -291,8 +290,8 @@ frame_height = int(cap.get(4))
 fps = 20  # cap.get(5)  # frames per second
 ```
 
-- frame_width and frame_height get the dimensions of the video frames from the cap object.
-- fps sets the frames per second for the output video. Although commented out, it would typically be retrieved from the video file.
+- ``frame_width`` and ``frame_height`` get the dimensions of the video frames from the cap object.
+- ``fps`` sets the frames per second for the output video. Although commented out, it would typically be retrieved from the video file.
 
 ### Initialize the Video Writer
 
@@ -315,7 +314,7 @@ q = compute_norm_hist(image, s_init)
 
 - Explanation:
  
-``compute_norm_hist`` computes the histogram for the initial state s_init of the object in the first frame. 
+``compute_norm_hist`` computes the histogram for the initial state ``s_init`` of the object in the first frame. 
 
 This histogram serves as the reference for comparing with histograms of particles in subsequent frames.
 
@@ -327,8 +326,8 @@ s_new = np.tile(s_init, (num_of_particles, 1)).T
 weights = np.ones(num_of_particles)
 ```
 
-- s_new initializes the state of all particles to the initial state s_init. np.tile creates a matrix where each column is s_init, and .T transposes it to match the required shape.
-- weights initializes the weight of each particle to 1, assuming equal probability for all particles initially.
+- ``s_new`` initializes the state of all particles to the initial state ``s_init. np.tile`` creates a matrix where each column is ``s_init``, and ``.T ``transposes it to match the required shape.
+- ``weights`` initializes the weight of each particle to 1, assuming equal probability for all particles initially.
 
 ## Main Loop
 Processing frames:

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-03T01:21:13+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Particle Filter Implemented in Python</title><link href="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html" rel="alternate" type="text/html" title="Particle Filter Implemented in Python" /><published>2024-08-03T01:00:00+01:00</published><updated>2024-08-03T01:00:00+01:00</updated><id>http://localhost:4000/2024/08/03/Particle%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html"><![CDATA[<h1 id="particle--filters-implemented-in-object-tracking">Particle  Filters implemented in Object tracking</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-03T21:09:15+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Particle Filter Implemented in Python</title><link href="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html" rel="alternate" type="text/html" title="Particle Filter Implemented in Python" /><published>2024-08-03T01:00:00+01:00</published><updated>2024-08-03T01:00:00+01:00</updated><id>http://localhost:4000/2024/08/03/Particle%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html"><![CDATA[<h1 id="particle--filters-implemented-in-object-tracking">Particle  Filters implemented in Object tracking</h1>
 
 <h3 id="whats-paricle-filters">What’s Paricle filters?</h3>
 
@@ -8,12 +8,12 @@
 
 <p>In this example, we will apply it into the tracking of dog’s postion.
 The original video:</p>
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/1LYmxfMimBQ" frameborder="0"></iframe>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/mOx5uBxvOnA" frameborder="0"></iframe>
 
 <p><strong>The performance</strong>:</p>
 
-<p>The video features a running dog being tracked using a particle filter. The red box represents the position predicted by the particle with the highest weight, indicating the most likely position of the dog. The green box represents the weighted average position of all particles, providing an overall estimate by combining the predictions of all particles. This dual-box system helps in accurately tracking the dog’s movement amidst challenging and dynamic environments.</p>
-<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/bl6VRCHkETI" frameborder="0"></iframe>
+<p>The video features a running cat being tracked using a particle filter. The red box represents the position predicted by the particle with the highest weight, indicating the most likely position of the dog. The green box represents the weighted average position of all particles, providing an overall estimate by combining the predictions of all particles. This dual-box system helps in accurately tracking the cat’s movement amidst challenging and dynamic environments.</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/4fTfw4pCu_I" frameborder="0"></iframe>
 
 <p><strong>Steps of particle filter</strong></p>
 
@@ -115,14 +115,7 @@ The original video:</p>
 
 <p><strong>Where:</strong></p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$$ p(y_t</td>
-      <td>x_t^{(i)}) $$ is the likelihood of the observation given the particle’s state.</td>
-    </tr>
-  </tbody>
-</table>
+<p>\(p(y_t | x_t^{(i)})\) is the likelihood of the observation given the particle’s state.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_weight</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="p">.</span><span class="nf">isclose</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="mi">1</span><span class="p">):</span>
@@ -133,14 +126,7 @@ The original video:</p>
 </span>    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="mi">20</span> <span class="o">*</span> <span class="n">bc</span><span class="p">)</span>
 </code></pre></div></div>
 
-<ul>
-  <li>
-    <p>Compute the histogram:</p>
-  </li>
-  <li>
-    <p>Normalize the histogram:</p>
-  </li>
-</ul>
+<p>This part computes the histogram and normalize the histogram.</p>
 
 <h3 id="4-compute-normalized-histogram">4. Compute Normalized Histogram</h3>
 
@@ -165,7 +151,7 @@ The original video:</p>
 <ul>
   <li>Extract the ROI based on the particle’s state and the bounding box dimensions.</li>
   <li>Quantize color values to create a histogram hist.</li>
-  <li>norm_hist is the normalized histogram.</li>
+  <li><code class="language-plaintext highlighter-rouge">norm_hist</code> is the normalized histogram.</li>
 </ul>
 
 <h3 id="5-resample-particles">5. Resample Particles</h3>
@@ -189,8 +175,8 @@ Resampling steps:</p>
 
 <p>Where:</p>
 <ul>
-  <li>sampling_weights is the cumulative sum of normalized weights.</li>
-  <li>cross_diff is used to match random numbers with the cumulative weights to select particles.</li>
+  <li><code class="language-plaintext highlighter-rouge">sampling_weights</code> is the cumulative sum of normalized weights.</li>
+  <li><code class="language-plaintext highlighter-rouge">cross_diff</code> is used to match random numbers with the cumulative weights to select particles.</li>
 </ul>
 
 <h3 id="6-draw-bounding-box">6. Draw Bounding Box</h3>
@@ -212,8 +198,8 @@ Resampling steps:</p>
 
 <p>Where:</p>
 <ul>
-  <li>mean_box is the weighted average position of the particles.</li>
-  <li>Draw bounding boxes for both the weighted average position and the particle with the maximum weight.</li>
+  <li><code class="language-plaintext highlighter-rouge">mean_box</code> is the weighted average position of the particles.</li>
+  <li><code class="language-plaintext highlighter-rouge">Draw bounding boxes</code> for both the weighted average position and the particle with the maximum weight.</li>
 </ul>
 
 <h3 id="7draw-particles">7.Draw Particles</h3>
@@ -227,7 +213,7 @@ Resampling steps:</p>
     <span class="k">return</span> <span class="n">image_with_particles</span>
 </code></pre></div></div>
 
-<p>Use cv2.circle to draw each particle, with the size proportional to the particle’s weight.</p>
+<p>Use <code class="language-plaintext highlighter-rouge">cv2.circle</code> to draw each particle, with the size proportional to the particle’s weight.</p>
 
 <h3 id="8-main-loop">8. Main Loop</h3>
 <p>Process each video frame iteratively, performing prediction, update, resampling, and visualization.</p>
@@ -241,8 +227,8 @@ Resampling steps:</p>
 </code></pre></div></div>
 
 <ul>
-  <li>Explanation: cv2.VideoCapture creates an object to read from the video file DSCF2822.MP4.</li>
-  <li>Check: The if not cap.isOpened() block verifies that the video file was successfully opened. If not, it prints an error message and exits the program.</li>
+  <li>Explanation: <code class="language-plaintext highlighter-rouge">cv2.VideoCapture</code> creates an object to read from the video file DSCF2822.MP4.</li>
+  <li>Check: The if not <code class="language-plaintext highlighter-rouge">cap.isOpened()</code> block verifies that the video file was successfully opened. If not, it prints an error message and exits the program.</li>
 </ul>
 
 <h4 id="read-the-first-frame">Read the First Frame</h4>
@@ -254,7 +240,7 @@ Resampling steps:</p>
 </code></pre></div></div>
 
 <ul>
-  <li>Explanation: cap.read() reads the first frame from the video.</li>
+  <li>Explanation: <code class="language-plaintext highlighter-rouge">cap.read()</code> reads the first frame from the video.</li>
   <li>Check: If reading the first frame fails (ret is False), it prints an error message and exits.</li>
 </ul>
 
@@ -266,7 +252,7 @@ Resampling steps:</p>
 
 <ul>
   <li>set the number of particles used in the particle filter to 500. More particles generally provide better tracking accuracy but require more computation.</li>
-  <li>s_init represents the initial state of the object being tracked. It is an array with four elements:x and y position and velocity.</li>
+  <li><code class="language-plaintext highlighter-rouge">s_init</code> represents the initial state of the object being tracked. It is an array with four elements:x and y position and velocity.</li>
 </ul>
 
 <p>Bounding Box Dimensions: 
@@ -284,8 +270,8 @@ These values define the dimensions of the bounding box around the object being t
 </span></code></pre></div></div>
 
 <ul>
-  <li>frame_width and frame_height get the dimensions of the video frames from the cap object.</li>
-  <li>fps sets the frames per second for the output video. Although commented out, it would typically be retrieved from the video file.</li>
+  <li><code class="language-plaintext highlighter-rouge">frame_width</code> and <code class="language-plaintext highlighter-rouge">frame_height</code> get the dimensions of the video frames from the cap object.</li>
+  <li><code class="language-plaintext highlighter-rouge">fps</code> sets the frames per second for the output video. Although commented out, it would typically be retrieved from the video file.</li>
 </ul>
 
 <h3 id="initialize-the-video-writer">Initialize the Video Writer</h3>
@@ -307,7 +293,7 @@ These values define the dimensions of the bounding box around the object being t
   <li>Explanation:</li>
 </ul>
 
-<p><code class="language-plaintext highlighter-rouge">compute_norm_hist</code> computes the histogram for the initial state s_init of the object in the first frame.</p>
+<p><code class="language-plaintext highlighter-rouge">compute_norm_hist</code> computes the histogram for the initial state <code class="language-plaintext highlighter-rouge">s_init</code> of the object in the first frame.</p>
 
 <p>This histogram serves as the reference for comparing with histograms of particles in subsequent frames.</p>
 
@@ -318,8 +304,8 @@ These values define the dimensions of the bounding box around the object being t
 </code></pre></div></div>
 
 <ul>
-  <li>s_new initializes the state of all particles to the initial state s_init. np.tile creates a matrix where each column is s_init, and .T transposes it to match the required shape.</li>
-  <li>weights initializes the weight of each particle to 1, assuming equal probability for all particles initially.</li>
+  <li><code class="language-plaintext highlighter-rouge">s_new</code> initializes the state of all particles to the initial state <code class="language-plaintext highlighter-rouge">s_init. np.tile</code> creates a matrix where each column is <code class="language-plaintext highlighter-rouge">s_init</code>, and <code class="language-plaintext highlighter-rouge">.T</code>transposes it to match the required shape.</li>
+  <li><code class="language-plaintext highlighter-rouge">weights</code> initializes the weight of each particle to 1, assuming equal probability for all particles initially.</li>
 </ul>
 
 <h2 id="main-loop">Main Loop</h2>
