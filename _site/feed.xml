@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-03T01:07:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Particle Filter Implemented in Python</title><link href="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html" rel="alternate" type="text/html" title="Particle Filter Implemented in Python" /><published>2024-08-03T01:00:00+01:00</published><updated>2024-08-03T01:00:00+01:00</updated><id>http://localhost:4000/2024/08/03/Particle%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html"><![CDATA[<h1 id="particle--filters-implemented-in-object-tracking">Particle  Filters implemented in Object tracking</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-03T01:21:13+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FAN Bot</title><subtitle>your web description</subtitle><author><name>true</name></author><entry><title type="html">Particle Filter Implemented in Python</title><link href="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html" rel="alternate" type="text/html" title="Particle Filter Implemented in Python" /><published>2024-08-03T01:00:00+01:00</published><updated>2024-08-03T01:00:00+01:00</updated><id>http://localhost:4000/2024/08/03/Particle%20filter%20in%20Python</id><content type="html" xml:base="http://localhost:4000/2024/08/03/Particle-filter-in-Python.html"><![CDATA[<h1 id="particle--filters-implemented-in-object-tracking">Particle  Filters implemented in Object tracking</h1>
 
 <h3 id="whats-paricle-filters">What’s Paricle filters?</h3>
 
@@ -113,8 +113,16 @@ The original video:</p>
 
 \[w_t^{(i)} \propto p(y_t | x_t^{(i)})\]
 
-<p><strong>Where:</strong>
- \(p(y_t | x_t^{(i)})\) is the likelihood of the observation given the particle’s state.</p>
+<p><strong>Where:</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$$ p(y_t</td>
+      <td>x_t^{(i)}) $$ is the likelihood of the observation given the particle’s state.</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_weight</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="p">.</span><span class="nf">isclose</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="mi">1</span><span class="p">):</span>
@@ -127,18 +135,11 @@ The original video:</p>
 
 <ul>
   <li>
-    <p>Compute the histogram:
-\(\text{hist}, \_ = \text{np.histogram}(\text{roi\_indexing}, \text{bins}=4096, \text{range}=(0, 4096))\)</p>
+    <p>Compute the histogram:</p>
   </li>
   <li>
     <p>Normalize the histogram:</p>
   </li>
-</ul>
-
-<p>\(\text{norm\_hist} = \frac{\text{hist}}{\sum \text{hist}}\)
-<strong>Where:</strong></p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">roi_indexing</code> represents quantized color values from the ROI.</li>
 </ul>
 
 <h3 id="4-compute-normalized-histogram">4. Compute Normalized Histogram</h3>

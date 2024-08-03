@@ -273,8 +273,16 @@ The original video:</p>
 
 \[w_t^{(i)} \propto p(y_t | x_t^{(i)})\]
 
-<p><strong>Where:</strong>
- \(p(y_t | x_t^{(i)})\) is the likelihood of the observation given the particle’s state.</p>
+<p><strong>Where:</strong></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$$ p(y_t</td>
+      <td>x_t^{(i)}) $$ is the likelihood of the observation given the particle’s state.</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_weight</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="p">.</span><span class="nf">isclose</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="mi">1</span><span class="p">):</span>
@@ -287,18 +295,11 @@ The original video:</p>
 
 <ul>
   <li>
-    <p>Compute the histogram:
-\(\text{hist}, \_ = \text{np.histogram}(\text{roi\_indexing}, \text{bins}=4096, \text{range}=(0, 4096))\)</p>
+    <p>Compute the histogram:</p>
   </li>
   <li>
     <p>Normalize the histogram:</p>
   </li>
-</ul>
-
-<p>\(\text{norm\_hist} = \frac{\text{hist}}{\sum \text{hist}}\)
-<strong>Where:</strong></p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">roi_indexing</code> represents quantized color values from the ROI.</li>
 </ul>
 
 <h3 id="4-compute-normalized-histogram">4. Compute Normalized Histogram</h3>

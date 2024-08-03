@@ -123,6 +123,7 @@ w_t^{(i)} \propto p(y_t | x_t^{(i)})
 $$
 
 **Where:**
+
  $$ p(y_t | x_t^{(i)}) $$ is the likelihood of the observation given the particle's state.
 
 
@@ -137,17 +138,10 @@ def compute_weight(p, q):
 ```
 
 - Compute the histogram:
-$$
-\text{hist}, \_ = \text{np.histogram}(\text{roi\_indexing}, \text{bins}=4096, \text{range}=(0, 4096))
-$$
+
 
 - Normalize the histogram:
 
-$$
-\text{norm\_hist} = \frac{\text{hist}}{\sum \text{hist}}
-$$
-**Where:**
-- `roi_indexing` represents quantized color values from the ROI.
 
 
 ### 4. Compute Normalized Histogram
