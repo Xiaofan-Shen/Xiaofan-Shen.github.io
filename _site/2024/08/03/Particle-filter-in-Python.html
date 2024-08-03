@@ -1,0 +1,663 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="your web description" />
+<meta name="keywords" content="Robot, Machine Learning, Wood Skill, Worldwide Journey" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<!-- <script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script> -->
+<script src="/assets/fonts/font_856428_y9z6nq7zf5.js"></script>
+
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>Particle Filter Implemented in Python</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FZ705XRJX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5FZ705XRJX');
+</script>
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(200,200,200) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(200,200,200);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Fan's Robot Lab</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/about.html" style="color: white;">Homepage</a></li>
+              
+                <li><a href="/" style="color: white;">My Projects</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">Timeline</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">Tags</a></li>
+              
+                <li><a href="/mytrip.html" style="color: white;">My Fancy Trip</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/about.html"><li>Homepage</li></a>
+        
+          <a href="/"><li>My Projects</li></a>
+        
+          <a href="/timeline.html"><li>Timeline</li></a>
+        
+          <a href="/tags.html"><li>Tags</li></a>
+        
+          <a href="/mytrip.html"><li>My Fancy Trip</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Particle Filter Implemented in Python</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(200,200,200);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(200,200,200)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(200,200,200);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">Particle Filter Implemented in Python</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;true</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2024/07/18/Kalman-filter-in-Python-copy.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(200,200,200)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(200,200,200);"><sapn class="main">Kalman Filter Implemented in Python</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(200,200,200);border-bottom: 2px solid rgb(200,200,200);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2024/07/18/Kalman-filter-in-Python-copy.html" class="rightchange" style="border-left: 1px solid rgb(200,200,200);border-bottom: 2px solid rgb(200,200,200);"><span>下一篇<br><br>Kalman Filter Implemented in Python</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+
+  <!-- 文章内容 -->
+  <h1 id="particle--filters-implemented-in-object-tracking">Particle  Filters implemented in Object tracking</h1>
+
+<h3 id="whats-paricle-filters">What’s Paricle filters?</h3>
+
+<p>Particle filter is a powerful technique used for state estimation, particularly effective in handling nonlinear systems, non-Gaussian distributions, and complex noise scenarios. It utilizes a large number of randomly sampled particles to represent the distribution of possible system states and dynamically updates their weights based on sensor measurements. Unlike traditional filters such as the Kalman filter, particle filter is not constrained by assumptions of linearity and Gaussianity, making it ideal for scenarios with multimodal distributions, unknown dynamic models, or nonlinear sensor measurements.</p>
+
+<p>For example, in robot localization, particle filter excels in accurately tracking the robot’s position and orientation amidst challenging environments and unpredictable motion patterns. This versatility makes particle filter a crucial tool in tasks like robot navigation, target tracking, and other dynamic system state estimations.</p>
+
+<p>In this example, we will apply it into the tracking of dog’s postion.
+The original video:</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/1LYmxfMimBQ" frameborder="0"></iframe>
+
+<p><strong>The performance</strong>:</p>
+
+<p>The video features a running dog being tracked using a particle filter. The red box represents the position predicted by the particle with the highest weight, indicating the most likely position of the dog. The green box represents the weighted average position of all particles, providing an overall estimate by combining the predictions of all particles. This dual-box system helps in accurately tracking the dog’s movement amidst challenging and dynamic environments.</p>
+<iframe type="text/html" width="100%" height="385" src="https://www.youtube.com/embed/bl6VRCHkETI" frameborder="0"></iframe>
+
+<p><strong>Steps of particle filter</strong></p>
+
+<p>The core idea behind particle filtering is to use a large number of random samples (particles) to represent the distribution of possible states in a system, allowing for estimation and prediction of the system’s state. To apply this algorithm, there are few steps to follow:</p>
+
+<ol>
+  <li>
+    <p><strong>Initialization</strong></p>
+
+    <p>Randomly generate a set of particles and assign equal weights to them. These particles represent possible initial states of the system.</p>
+  </li>
+  <li>
+    <p><strong>Prediction</strong></p>
+
+    <p>For each particle, use the system dynamics model and control inputs to predict the next state. This involves moving the particles according to the expected system behavior.</p>
+  </li>
+  <li>
+    <p><strong>Update (Weighting)</strong></p>
+
+    <p>Update the weight of each particle based on the likelihood of the observed measurements given the particle’s predicted state. Particles that better match the actual observations receive higher weights.</p>
+  </li>
+  <li>
+    <p><strong>Resample</strong></p>
+
+    <p>Resample the particles based on their weights to focus on more probable states. Particles with higher weights are more likely to be duplicated, while particles with lower weights are likely to be discarded.</p>
+  </li>
+  <li>
+    <p><strong>Compute Estimation</strong></p>
+
+    <p>Optionally, compute the state estimate from the weighted particles, typically using the weighted mean or mode of the particles.</p>
+  </li>
+  <li>
+    <p><strong>Loop</strong></p>
+
+    <p>Repeat the prediction, update, resampling, and estimation steps for each new observation.</p>
+  </li>
+</ol>
+
+<h3 id="code-implementation">Code Implementation</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">cv2</span>
+</code></pre></div></div>
+
+<h3 id="1-state-prediction">1. State Prediction</h3>
+<p>The state of each particle is predicted based on a state transition model, which is often a linear model with added Gaussian noise.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_of_particles</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">s_init</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1600</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>  <span class="c1"># Initial state [x_center, y_center, x_velocity, y_velocity]
+</span>
+<span class="c1"># For the first frame, all particles are initialized to the same state
+</span><span class="n">s_new</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">tile</span><span class="p">(</span><span class="n">s_init</span><span class="p">,</span> <span class="p">(</span><span class="n">num_of_particles</span><span class="p">,</span> <span class="mi">1</span><span class="p">)).</span><span class="n">T</span>
+<span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">ones</span><span class="p">(</span><span class="n">num_of_particles</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">s_init</code>represents the initial state of the target, including its center position and velocity.</li>
+  <li><code class="language-plaintext highlighter-rouge">s_new</code> initializes the particle states by replicating s_init.</li>
+  <li><code class="language-plaintext highlighter-rouge">weights</code> initializes all particle weights to 1.</li>
+</ul>
+
+<h3 id="2-predict-particle-states">2. Predict Particle States</h3>
+<p>Particles are predicted based on a state transition model. This model is linear and includes Gaussian noise to simulate process uncertainty.</p>
+
+\[x_t^{(i)} = A \cdot x_{t-1}^{(i)} + v_t^{(i)}\]
+
+<p><strong>Where:</strong></p>
+<ul>
+  <li>$x_t^{(i)}$  is the state of the (i)-th particle at time (t).</li>
+  <li>$A$  is the state transition matrix.</li>
+  <li>$v_t^{(i)}$ is the process noise for the (i)-th particle at time (t).</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">predict_particles</span><span class="p">(</span><span class="n">particles_states</span><span class="p">):</span>
+    <span class="n">dynamics</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span>
+        <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+         <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+         <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+         <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
+    <span class="p">)</span>
+    <span class="n">predicted_states</span> <span class="o">=</span> <span class="n">dynamics</span> <span class="o">@</span> <span class="n">particles_states</span> <span class="o">+</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">particles_states</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">predicted_states</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">dynamics</code> is the state transition matrix A, which includes the transition model for position and velocity.</li>
+  <li><code class="language-plaintext highlighter-rouge">np.random.normal</code> adds Gaussian noise to the predicted states.</li>
+</ul>
+
+<h3 id="3-compute-particle-weights">3. Compute Particle Weights</h3>
+<p>Weights are computed based on the likelihood of the observed data given the particle’s state. This is done by comparing the histogram of the particle’s state with the reference histogram.</p>
+
+<p>Weight calculation formula:</p>
+
+\[w_t^{(i)} \propto p(y_t | x_t^{(i)})\]
+
+<p><strong>Where:</strong>
+ \(p(y_t | x_t^{(i)})\) is the likelihood of the observation given the particle’s state.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_weight</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="p">.</span><span class="nf">isclose</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="nc">ValueError</span><span class="p">(</span><span class="sh">'</span><span class="s">p histogram is not normalized</span><span class="sh">'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="p">.</span><span class="nf">isclose</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">q</span><span class="p">),</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="nc">ValueError</span><span class="p">(</span><span class="sh">'</span><span class="s">q histogram is not normalized</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">bc</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="n">q</span><span class="p">))</span>  <span class="c1"># Bhattacharyya coefficient
+</span>    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="mi">20</span> <span class="o">*</span> <span class="n">bc</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Compute the histogram:
+\(\text{hist}, \_ = \text{np.histogram}(\text{roi\_indexing}, \text{bins}=4096, \text{range}=(0, 4096))\)</p>
+  </li>
+  <li>
+    <p>Normalize the histogram:</p>
+  </li>
+</ul>
+
+<p>\(\text{norm\_hist} = \frac{\text{hist}}{\sum \text{hist}}\)
+<strong>Where:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">roi_indexing</code> represents quantized color values from the ROI.</li>
+</ul>
+
+<h3 id="4-compute-normalized-histogram">4. Compute Normalized Histogram</h3>
+
+<p>Extract the region of interest (ROI) from the image based on the particle’s state and compute its color histogram. Normalize the histogram for comparison.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_norm_hist</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+    <span class="n">x_min</span> <span class="o">=</span> <span class="nf">max</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">half_width</span><span class="p">).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">x_max</span> <span class="o">=</span> <span class="nf">min</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">half_width</span><span class="p">).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span> <span class="n">image</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">y_min</span> <span class="o">=</span> <span class="nf">max</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">half_height</span><span class="p">).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">y_max</span> <span class="o">=</span> <span class="nf">min</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">half_height</span><span class="p">).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span> <span class="n">image</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">roi</span> <span class="o">=</span> <span class="n">image</span><span class="p">[</span><span class="n">y_min</span><span class="p">:</span><span class="n">y_max</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">x_min</span><span class="p">:</span><span class="n">x_max</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">roi_reduced</span> <span class="o">=</span> <span class="n">roi</span> <span class="o">//</span> <span class="mi">16</span>
+    <span class="n">roi_reduced</span> <span class="o">=</span> <span class="n">roi_reduced</span><span class="p">.</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">roi_indexing</span> <span class="o">=</span> <span class="p">(</span><span class="n">roi_reduced</span><span class="p">[...,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">roi_reduced</span><span class="p">[...,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">16</span> <span class="o">+</span> <span class="n">roi_reduced</span><span class="p">[...,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mi">16</span> <span class="o">**</span> <span class="mi">2</span><span class="p">).</span><span class="nf">flatten</span><span class="p">()</span>
+    <span class="n">hist</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">histogram</span><span class="p">(</span><span class="n">roi_indexing</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">4096</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4096</span><span class="p">))</span>
+    <span class="n">norm_hist</span> <span class="o">=</span> <span class="n">hist</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">hist</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">norm_hist</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li>Extract the ROI based on the particle’s state and the bounding box dimensions.</li>
+  <li>Quantize color values to create a histogram hist.</li>
+  <li>norm_hist is the normalized histogram.</li>
+</ul>
+
+<h3 id="5-resample-particles">5. Resample Particles</h3>
+<p>Resampling is done based on particle weights. This step ensures that particles with higher weights are more likely to be selected.
+Resampling steps:</p>
+<ul>
+  <li>Calculate the cumulative distribution function (CDF) of the weights.</li>
+  <li>Use random numbers to sample indices according to the CDF.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sample_particle</span><span class="p">(</span><span class="n">particles_states</span><span class="p">,</span> <span class="n">weights</span><span class="p">):</span>
+    <span class="n">normalized_weights</span> <span class="o">=</span> <span class="n">weights</span> <span class="o">/</span> <span class="n">np</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span>
+    <span class="n">sampling_weights</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">cumsum</span><span class="p">(</span><span class="n">normalized_weights</span><span class="p">)</span>
+    <span class="n">rand_numbers</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="nf">random</span><span class="p">(</span><span class="n">sampling_weights</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">cross_diff</span> <span class="o">=</span> <span class="n">sampling_weights</span><span class="p">[</span><span class="bp">None</span><span class="p">,</span> <span class="p">:]</span> <span class="o">-</span> <span class="n">rand_numbers</span><span class="p">[:,</span> <span class="bp">None</span><span class="p">]</span>
+    <span class="n">cross_diff</span><span class="p">[</span><span class="n">cross_diff</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">inf</span>
+    <span class="n">sampling</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">argmin</span><span class="p">(</span><span class="n">cross_diff</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">sampled_particles</span> <span class="o">=</span> <span class="n">particles_states</span><span class="p">[:,</span> <span class="n">sampling</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">sampled_particles</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li>sampling_weights is the cumulative sum of normalized weights.</li>
+  <li>cross_diff is used to match random numbers with the cumulative weights to select particles.</li>
+</ul>
+
+<h3 id="6-draw-bounding-box">6. Draw Bounding Box</h3>
+<p>Draw bounding boxes around the object based on the weighted average position and the position of the particle with the maximum weight.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">draw_bounding_box</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">states</span><span class="p">,</span> <span class="n">weights</span><span class="p">,</span> <span class="n">with_max</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="n">mean_box</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">average</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="n">weights</span><span class="p">)</span>
+    <span class="n">x_c_mean</span><span class="p">,</span> <span class="n">y_c_mean</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">mean_box</span><span class="p">[:</span><span class="mi">2</span><span class="p">]).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">image_with_boxes</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="nf">copy</span><span class="p">()</span>
+    <span class="n">cv2</span><span class="p">.</span><span class="nf">rectangle</span><span class="p">(</span><span class="n">image_with_boxes</span><span class="p">,</span> <span class="p">(</span><span class="n">x_c_mean</span> <span class="o">-</span> <span class="n">half_width</span><span class="p">,</span> <span class="n">y_c_mean</span> <span class="o">-</span> <span class="n">half_height</span><span class="p">),</span>
+                                     <span class="p">(</span><span class="n">x_c_mean</span> <span class="o">+</span> <span class="n">half_width</span><span class="p">,</span> <span class="n">y_c_mean</span> <span class="o">+</span> <span class="n">half_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">with_max</span><span class="p">:</span>
+        <span class="n">max_box</span> <span class="o">=</span> <span class="n">states</span><span class="p">[:,</span> <span class="n">np</span><span class="p">.</span><span class="nf">argmax</span><span class="p">(</span><span class="n">weights</span><span class="p">)]</span>
+        <span class="n">x_c_max</span><span class="p">,</span> <span class="n">y_c_max</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">max_box</span><span class="p">[:</span><span class="mi">2</span><span class="p">]).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="nf">rectangle</span><span class="p">(</span><span class="n">image_with_boxes</span><span class="p">,</span> <span class="p">(</span><span class="n">x_c_max</span> <span class="o">-</span> <span class="n">half_width</span><span class="p">,</span> <span class="n">y_c_max</span> <span class="o">-</span> <span class="n">half_height</span><span class="p">),</span>
+                                         <span class="p">(</span><span class="n">x_c_max</span> <span class="o">+</span> <span class="n">half_width</span><span class="p">,</span> <span class="n">y_c_max</span> <span class="o">+</span> <span class="n">half_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">image_with_boxes</span>
+</code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li>mean_box is the weighted average position of the particles.</li>
+  <li>Draw bounding boxes for both the weighted average position and the particle with the maximum weight.</li>
+</ul>
+
+<h3 id="7draw-particles">7.Draw Particles</h3>
+<p>Visualize particles on the image. The size of each particle is proportional to its weight.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">draw_particles</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">states</span><span class="p">,</span> <span class="n">weights</span><span class="p">):</span>
+    <span class="n">image_with_particles</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="nf">copy</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">s</span><span class="p">,</span> <span class="n">w</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="n">states</span><span class="p">.</span><span class="n">T</span><span class="p">,</span> <span class="n">weights</span><span class="p">):</span>
+        <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="mi">2</span><span class="p">]).</span><span class="nf">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="p">.</span><span class="nf">circle</span><span class="p">(</span><span class="n">image_with_particles</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="nf">int</span><span class="p">(</span><span class="nf">round</span><span class="p">(</span><span class="mi">30</span> <span class="o">*</span> <span class="n">w</span><span class="p">)),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">),</span> <span class="n">thickness</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">image_with_particles</span>
+</code></pre></div></div>
+
+<p>Use cv2.circle to draw each particle, with the size proportional to the particle’s weight.</p>
+
+<h3 id="8-main-loop">8. Main Loop</h3>
+<p>Process each video frame iteratively, performing prediction, update, resampling, and visualization.</p>
+
+<h3 id="create-video-reader-object">Create Video Reader Object</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cap</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="nc">VideoCapture</span><span class="p">(</span><span class="sh">'</span><span class="s">DSCF2822.MP4</span><span class="sh">'</span><span class="p">)</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">cap</span><span class="p">.</span><span class="nf">isOpened</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Error: Could not open video file.</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Explanation: cv2.VideoCapture creates an object to read from the video file DSCF2822.MP4.</li>
+  <li>Check: The if not cap.isOpened() block verifies that the video file was successfully opened. If not, it prints an error message and exits the program.</li>
+</ul>
+
+<h4 id="read-the-first-frame">Read the First Frame</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ret</span><span class="p">,</span> <span class="n">image</span> <span class="o">=</span> <span class="n">cap</span><span class="p">.</span><span class="nf">read</span><span class="p">()</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">ret</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Error: Could not read the first frame.</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Explanation: cap.read() reads the first frame from the video.</li>
+  <li>Check: If reading the first frame fails (ret is False), it prints an error message and exits.</li>
+</ul>
+
+<h3 id="initialization-of-number-of-particles-and-initial-state">Initialization of Number of Particles and Initial State</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">num_of_particles</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">s_init</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1600</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>  <span class="c1"># initial state [x_center, y_center, x_velocity, y_velocity]
+</span></code></pre></div></div>
+
+<ul>
+  <li>set the number of particles used in the particle filter to 500. More particles generally provide better tracking accuracy but require more computation.</li>
+  <li>s_init represents the initial state of the object being tracked. It is an array with four elements:x and y position and velocity.</li>
+</ul>
+
+<p>Bounding Box Dimensions: 
+These values define the dimensions of the bounding box around the object being tracked.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">half_height</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">half_width</span> <span class="o">=</span> <span class="mi">80</span>
+</code></pre></div></div>
+
+<p>Video Parameters</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">frame_width</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">cap</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">frame_height</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">cap</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">fps</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># cap.get(5)  # frames per second
+</span></code></pre></div></div>
+
+<ul>
+  <li>frame_width and frame_height get the dimensions of the video frames from the cap object.</li>
+  <li>fps sets the frames per second for the output video. Although commented out, it would typically be retrieved from the video file.</li>
+</ul>
+
+<h3 id="initialize-the-video-writer">Initialize the Video Writer</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="n">frame_width</span><span class="p">,</span> <span class="n">frame_height</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="nc">VideoWriter</span><span class="p">(</span><span class="sh">'</span><span class="s">nini_tracked.avi</span><span class="sh">'</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="nc">VideoWriter_fourcc</span><span class="p">(</span><span class="o">*</span><span class="sh">'</span><span class="s">MJPG</span><span class="sh">'</span><span class="p">),</span> <span class="n">fps</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">.</span><span class="nf">isOpened</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Error: Could not open video writer.</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="get-the-normalized-histogram-of-the-initial-state">Get the Normalized Histogram of the Initial State</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">q</span> <span class="o">=</span> <span class="nf">compute_norm_hist</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">s_init</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Explanation:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">compute_norm_hist</code> computes the histogram for the initial state s_init of the object in the first frame.</p>
+
+<p>This histogram serves as the reference for comparing with histograms of particles in subsequent frames.</p>
+
+<h3 id="initialize-particles-and-weights">Initialize Particles and Weights</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s_new</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">tile</span><span class="p">(</span><span class="n">s_init</span><span class="p">,</span> <span class="p">(</span><span class="n">num_of_particles</span><span class="p">,</span> <span class="mi">1</span><span class="p">)).</span><span class="n">T</span>
+<span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">ones</span><span class="p">(</span><span class="n">num_of_particles</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>s_new initializes the state of all particles to the initial state s_init. np.tile creates a matrix where each column is s_init, and .T transposes it to match the required shape.</li>
+  <li>weights initializes the weight of each particle to 1, assuming equal probability for all particles initially.</li>
+</ul>
+
+<h2 id="main-loop">Main Loop</h2>
+<p>Processing frames:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># go over the frames in the video
+</span><span class="n">frame_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="c1"># sample new particles according to the weights
+</span>    <span class="n">s_sampled</span> <span class="o">=</span> <span class="nf">sample_particle</span><span class="p">(</span><span class="n">s_new</span><span class="p">,</span> <span class="n">weights</span><span class="p">)</span>
+    <span class="c1"># predict new particles (states) according to the previous states
+</span>    <span class="n">s_new</span> <span class="o">=</span> <span class="nf">predict_particles</span><span class="p">(</span><span class="n">s_sampled</span><span class="p">)</span>
+    <span class="c1"># go over the new predicted states, and compute the histogram for the state and
+</span>    <span class="c1"># the weight with the original histogram
+</span>    <span class="k">for</span> <span class="n">jj</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">s_new</span><span class="p">.</span><span class="n">T</span><span class="p">):</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="nf">compute_norm_hist</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+        <span class="n">weights</span><span class="p">[</span><span class="n">jj</span><span class="p">]</span> <span class="o">=</span> <span class="nf">compute_weight</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+
+    <span class="c1"># draw bounding box over the tracked object
+</span>    <span class="n">image_with_boxes</span> <span class="o">=</span> <span class="nf">draw_bounding_box</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">s_new</span><span class="p">,</span> <span class="n">weights</span><span class="p">,</span> <span class="n">with_max</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">result</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">image_with_boxes</span><span class="p">)</span>
+
+    <span class="c1"># read next frame
+</span>    <span class="n">ret</span><span class="p">,</span> <span class="n">image</span> <span class="o">=</span> <span class="n">cap</span><span class="p">.</span><span class="nf">read</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">ret</span><span class="p">:</span>  <span class="c1"># if there is no next frame to read, stop
+</span>        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">End of video at frame </span><span class="si">{</span><span class="n">frame_count</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="n">frame_count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">frame_count</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Processed frame </span><span class="si">{</span><span class="n">frame_count</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># release video objects
+</span><span class="n">cap</span><span class="p">.</span><span class="nf">release</span><span class="p">()</span>
+<span class="n">result</span><span class="p">.</span><span class="nf">release</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Video processing completed and file saved.</span><span class="sh">"</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+<!-- 
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+ -->
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>FAN Bot ©
+  
+  
+    2023
+    -
+  
+  2024
+  <br>
+  <!-- Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span> -->
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "all" },
+      tagSide: "right"
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script 
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+  type="text/javascript">
+
+</script>
+
+</body>
+</html>
